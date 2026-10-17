@@ -6,8 +6,10 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.143.3",
+    "pillow>=13.0.0",
     "pydantic>=2.14.1",
     "pyjwt[crypto]>=2.15.1",
+    "pymupdf>=1.28.2",
     "uvicorn[standard]>=0.54.0",
 ]
 

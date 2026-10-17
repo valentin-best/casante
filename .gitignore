@@ -15,6 +15,9 @@ htmlcov/
 build/
 dist/
 
+# API
+api/pipeline/ingest_out/
+
 # Data
 data/synthea/
 data/synthea_repo
