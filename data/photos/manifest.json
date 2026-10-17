@@ -1,0 +1,514 @@
+[
+  {
+    "file": "p01__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p01/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 45,
+    "seed_key": "42:p01__clinic_letter:1:0"
+  },
+  {
+    "file": "p01__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p01/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 56,
+    "seed_key": "42:p01__discharge_summary:1:0"
+  },
+  {
+    "file": "p01__discharge_summary_p2_v0.jpg",
+    "source_pdf": "p01/discharge_summary.pdf",
+    "page": 2,
+    "variant": 0,
+    "jpeg_quality": 68,
+    "seed_key": "42:p01__discharge_summary:2:0"
+  },
+  {
+    "file": "p01__lab_report_p1_v0.jpg",
+    "source_pdf": "p01/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 54,
+    "seed_key": "42:p01__lab_report:1:0"
+  },
+  {
+    "file": "p02__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p02/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 48,
+    "seed_key": "42:p02__clinic_letter:1:0"
+  },
+  {
+    "file": "p02__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p02/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 40,
+    "seed_key": "42:p02__discharge_summary:1:0"
+  },
+  {
+    "file": "p02__lab_report_p1_v0.jpg",
+    "source_pdf": "p02/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 40,
+    "seed_key": "42:p02__lab_report:1:0"
+  },
+  {
+    "file": "p03__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p03/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 45,
+    "seed_key": "42:p03__clinic_letter:1:0"
+  },
+  {
+    "file": "p03__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p03/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 49,
+    "seed_key": "42:p03__discharge_summary:1:0"
+  },
+  {
+    "file": "p03__lab_report_p1_v0.jpg",
+    "source_pdf": "p03/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 62,
+    "seed_key": "42:p03__lab_report:1:0"
+  },
+  {
+    "file": "p04__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p04/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 47,
+    "seed_key": "42:p04__clinic_letter:1:0"
+  },
+  {
+    "file": "p04__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p04/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 41,
+    "seed_key": "42:p04__discharge_summary:1:0"
+  },
+  {
+    "file": "p04__discharge_summary_p2_v0.jpg",
+    "source_pdf": "p04/discharge_summary.pdf",
+    "page": 2,
+    "variant": 0,
+    "jpeg_quality": 44,
+    "seed_key": "42:p04__discharge_summary:2:0"
+  },
+  {
+    "file": "p04__lab_report_p1_v0.jpg",
+    "source_pdf": "p04/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 52,
+    "seed_key": "42:p04__lab_report:1:0"
+  },
+  {
+    "file": "p05__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p05/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 46,
+    "seed_key": "42:p05__clinic_letter:1:0"
+  },
+  {
+    "file": "p05__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p05/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 42,
+    "seed_key": "42:p05__discharge_summary:1:0"
+  },
+  {
+    "file": "p05__lab_report_p1_v0.jpg",
+    "source_pdf": "p05/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 47,
+    "seed_key": "42:p05__lab_report:1:0"
+  },
+  {
+    "file": "p06__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p06/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 62,
+    "seed_key": "42:p06__clinic_letter:1:0"
+  },
+  {
+    "file": "p06__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p06/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 57,
+    "seed_key": "42:p06__discharge_summary:1:0"
+  },
+  {
+    "file": "p06__lab_report_p1_v0.jpg",
+    "source_pdf": "p06/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 53,
+    "seed_key": "42:p06__lab_report:1:0"
+  },
+  {
+    "file": "p07__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p07/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 53,
+    "seed_key": "42:p07__clinic_letter:1:0"
+  },
+  {
+    "file": "p07__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p07/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 51,
+    "seed_key": "42:p07__discharge_summary:1:0"
+  },
+  {
+    "file": "p07__discharge_summary_p2_v0.jpg",
+    "source_pdf": "p07/discharge_summary.pdf",
+    "page": 2,
+    "variant": 0,
+    "jpeg_quality": 44,
+    "seed_key": "42:p07__discharge_summary:2:0"
+  },
+  {
+    "file": "p07__lab_report_p1_v0.jpg",
+    "source_pdf": "p07/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 42,
+    "seed_key": "42:p07__lab_report:1:0"
+  },
+  {
+    "file": "p08__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p08/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 60,
+    "seed_key": "42:p08__clinic_letter:1:0"
+  },
+  {
+    "file": "p08__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p08/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 52,
+    "seed_key": "42:p08__discharge_summary:1:0"
+  },
+  {
+    "file": "p08__lab_report_p1_v0.jpg",
+    "source_pdf": "p08/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 56,
+    "seed_key": "42:p08__lab_report:1:0"
+  },
+  {
+    "file": "p09__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p09/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 62,
+    "seed_key": "42:p09__clinic_letter:1:0"
+  },
+  {
+    "file": "p09__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p09/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 62,
+    "seed_key": "42:p09__discharge_summary:1:0"
+  },
+  {
+    "file": "p09__lab_report_p1_v0.jpg",
+    "source_pdf": "p09/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 68,
+    "seed_key": "42:p09__lab_report:1:0"
+  },
+  {
+    "file": "p10__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p10/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 65,
+    "seed_key": "42:p10__clinic_letter:1:0"
+  },
+  {
+    "file": "p10__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p10/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 41,
+    "seed_key": "42:p10__discharge_summary:1:0"
+  },
+  {
+    "file": "p10__discharge_summary_p2_v0.jpg",
+    "source_pdf": "p10/discharge_summary.pdf",
+    "page": 2,
+    "variant": 0,
+    "jpeg_quality": 63,
+    "seed_key": "42:p10__discharge_summary:2:0"
+  },
+  {
+    "file": "p10__lab_report_p1_v0.jpg",
+    "source_pdf": "p10/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 55,
+    "seed_key": "42:p10__lab_report:1:0"
+  },
+  {
+    "file": "p11__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p11/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 51,
+    "seed_key": "42:p11__clinic_letter:1:0"
+  },
+  {
+    "file": "p11__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p11/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 64,
+    "seed_key": "42:p11__discharge_summary:1:0"
+  },
+  {
+    "file": "p11__lab_report_p1_v0.jpg",
+    "source_pdf": "p11/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 41,
+    "seed_key": "42:p11__lab_report:1:0"
+  },
+  {
+    "file": "p12__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p12/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 67,
+    "seed_key": "42:p12__clinic_letter:1:0"
+  },
+  {
+    "file": "p12__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p12/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 63,
+    "seed_key": "42:p12__discharge_summary:1:0"
+  },
+  {
+    "file": "p12__lab_report_p1_v0.jpg",
+    "source_pdf": "p12/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 69,
+    "seed_key": "42:p12__lab_report:1:0"
+  },
+  {
+    "file": "p13__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p13/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 42,
+    "seed_key": "42:p13__clinic_letter:1:0"
+  },
+  {
+    "file": "p13__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p13/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 51,
+    "seed_key": "42:p13__discharge_summary:1:0"
+  },
+  {
+    "file": "p13__lab_report_p1_v0.jpg",
+    "source_pdf": "p13/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 68,
+    "seed_key": "42:p13__lab_report:1:0"
+  },
+  {
+    "file": "p14__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p14/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 63,
+    "seed_key": "42:p14__clinic_letter:1:0"
+  },
+  {
+    "file": "p14__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p14/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 51,
+    "seed_key": "42:p14__discharge_summary:1:0"
+  },
+  {
+    "file": "p14__lab_report_p1_v0.jpg",
+    "source_pdf": "p14/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 52,
+    "seed_key": "42:p14__lab_report:1:0"
+  },
+  {
+    "file": "p15__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p15/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 40,
+    "seed_key": "42:p15__clinic_letter:1:0"
+  },
+  {
+    "file": "p15__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p15/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 48,
+    "seed_key": "42:p15__discharge_summary:1:0"
+  },
+  {
+    "file": "p15__lab_report_p1_v0.jpg",
+    "source_pdf": "p15/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 44,
+    "seed_key": "42:p15__lab_report:1:0"
+  },
+  {
+    "file": "p16__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p16/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 54,
+    "seed_key": "42:p16__clinic_letter:1:0"
+  },
+  {
+    "file": "p16__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p16/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 42,
+    "seed_key": "42:p16__discharge_summary:1:0"
+  },
+  {
+    "file": "p16__lab_report_p1_v0.jpg",
+    "source_pdf": "p16/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 49,
+    "seed_key": "42:p16__lab_report:1:0"
+  },
+  {
+    "file": "p17__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p17/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 70,
+    "seed_key": "42:p17__clinic_letter:1:0"
+  },
+  {
+    "file": "p17__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p17/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 48,
+    "seed_key": "42:p17__discharge_summary:1:0"
+  },
+  {
+    "file": "p17__lab_report_p1_v0.jpg",
+    "source_pdf": "p17/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 64,
+    "seed_key": "42:p17__lab_report:1:0"
+  },
+  {
+    "file": "p18__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p18/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 70,
+    "seed_key": "42:p18__clinic_letter:1:0"
+  },
+  {
+    "file": "p18__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p18/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 64,
+    "seed_key": "42:p18__discharge_summary:1:0"
+  },
+  {
+    "file": "p18__lab_report_p1_v0.jpg",
+    "source_pdf": "p18/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 70,
+    "seed_key": "42:p18__lab_report:1:0"
+  },
+  {
+    "file": "p19__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p19/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 46,
+    "seed_key": "42:p19__clinic_letter:1:0"
+  },
+  {
+    "file": "p19__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p19/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 70,
+    "seed_key": "42:p19__discharge_summary:1:0"
+  },
+  {
+    "file": "p19__lab_report_p1_v0.jpg",
+    "source_pdf": "p19/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 45,
+    "seed_key": "42:p19__lab_report:1:0"
+  },
+  {
+    "file": "p20__clinic_letter_p1_v0.jpg",
+    "source_pdf": "p20/clinic_letter.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 65,
+    "seed_key": "42:p20__clinic_letter:1:0"
+  },
+  {
+    "file": "p20__discharge_summary_p1_v0.jpg",
+    "source_pdf": "p20/discharge_summary.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 69,
+    "seed_key": "42:p20__discharge_summary:1:0"
+  },
+  {
+    "file": "p20__lab_report_p1_v0.jpg",
+    "source_pdf": "p20/lab_report.pdf",
+    "page": 1,
+    "variant": 0,
+    "jpeg_quality": 58,
+    "seed_key": "42:p20__lab_report:1:0"
+  }
+]
