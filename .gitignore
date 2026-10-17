@@ -1,1 +1,11 @@
 .DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+supabase.local.env
+
+# Supabase CLI
+supabase/.temp/
+supabase/.branches/
