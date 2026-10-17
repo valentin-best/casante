@@ -15,6 +15,9 @@ htmlcov/
 build/
 dist/
 
+# Synthea repository
+data/synthea_repo
+
 # Node
 node_modules/
 
