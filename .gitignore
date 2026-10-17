@@ -1,5 +1,27 @@
 .DS_Store
 
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/
+build/
+dist/
+
+# Node
+node_modules/
+
+# Editor settings
+.idea/
+.vscode/
+
 # Secrets
 .env
 .env.*
