@@ -1,0 +1,264 @@
+{
+  "patient_id": "p16",
+  "source_bundle": "Rosario163_Ortiz186_bff9d9d5-ee3d-d852-9c67-36d8361a4a4a.json",
+  "patient": {
+    "name": "Rosario Ortiz",
+    "dob": "1971-03-18",
+    "sex": "Male",
+    "mrn": "MRN-452291"
+  },
+  "documents": {
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-10-09",
+      "facility": "St. Anselm Medical Center",
+      "provider": "Dr. J. Williams",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Glucose [Mass/volume] in Blood",
+          "loinc": "2339-0",
+          "value": 89.28,
+          "unit": "mg/dL",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Urea nitrogen [Mass/volume] in Blood",
+          "loinc": "6299-2",
+          "value": 16.98,
+          "unit": "mg/dL",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Creatinine [Mass/volume] in Blood",
+          "loinc": "38483-4",
+          "value": 3.38,
+          "unit": "mg/dL",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Calcium [Mass/volume] in Blood",
+          "loinc": "49765-1",
+          "value": 9.77,
+          "unit": "mg/dL",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Sodium [Moles/volume] in Blood",
+          "loinc": "2947-0",
+          "value": 140.13,
+          "unit": "mmol/L",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Potassium [Moles/volume] in Blood",
+          "loinc": "6298-4",
+          "value": 4.68,
+          "unit": "mmol/L",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Chloride [Moles/volume] in Blood",
+          "loinc": "2069-3",
+          "value": 109.28,
+          "unit": "mmol/L",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Carbon dioxide, total [Moles/volume] in Blood",
+          "loinc": "20565-8",
+          "value": 21.53,
+          "unit": "mmol/L",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Glomerular filtration rate [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)/1.73 sq M",
+          "loinc": "33914-3",
+          "value": 21.0,
+          "unit": "mL/min",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Glucose [Mass/volume] in Urine by Test strip",
+          "loinc": "5792-7",
+          "value": 0.75,
+          "unit": "mg/dL",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Bilirubin.total [Mass/volume] in Urine by Test strip",
+          "loinc": "20505-4",
+          "value": 1.26,
+          "unit": "mg/dL",
+          "date": "2026-09-26"
+        },
+        {
+          "name": "Ketones [Mass/volume] in Urine by Test strip",
+          "loinc": "5797-6",
+          "value": 10.8,
+          "unit": "mg/dL",
+          "date": "2026-09-26"
+        }
+      ]
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-10-12",
+      "facility": "Willow Creek Physicians",
+      "provider": "Dr. J. Williams",
+      "medications": [
+        {
+          "name": "insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]",
+          "rxcui": "106892",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Hydrochlorothiazide 25 MG Oral Tablet",
+          "rxcui": "310798",
+          "dose": "25 mg",
+          "frequency": "every 12 hours"
+        },
+        {
+          "name": "Simvastatin 10 MG Oral Tablet",
+          "rxcui": "314231",
+          "dose": "10 mg",
+          "frequency": "three times daily"
+        },
+        {
+          "name": "Vitamin B12 5 MG/ML Injectable Solution",
+          "rxcui": "2001499",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Streptococcal sore throat",
+          "snomed": "43878008",
+          "onset": "2026-03-25",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2025-11-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-11-06",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic kidney disease stage 4",
+          "snomed": "431857002",
+          "onset": "2025-09-11",
+          "status": "active"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2025-03-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic kidney disease stage 3",
+          "snomed": "433144002",
+          "onset": "2025-03-13",
+          "status": "active"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2026-07-10"
+        },
+        {
+          "name": "Dental fluoride treatment",
+          "date": "2026-07-10"
+        }
+      ],
+      "labs": []
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-10-15",
+      "facility": "Pinecrest Medical Group",
+      "provider": "Dr. H. Kim",
+      "medications": [
+        {
+          "name": "insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]",
+          "rxcui": "106892",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Hydrochlorothiazide 25 MG Oral Tablet",
+          "rxcui": "310798",
+          "dose": "25 mg",
+          "frequency": "every 12 hours"
+        },
+        {
+          "name": "Simvastatin 10 MG Oral Tablet",
+          "rxcui": "314231",
+          "dose": "10 mg",
+          "frequency": "three times daily"
+        },
+        {
+          "name": "Vitamin B12 5 MG/ML Injectable Solution",
+          "rxcui": "2001499",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Streptococcal sore throat",
+          "snomed": "43878008",
+          "onset": "2026-03-25",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2025-11-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-11-06",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic kidney disease stage 4",
+          "snomed": "431857002",
+          "onset": "2025-09-11",
+          "status": "active"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2025-03-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic kidney disease stage 3",
+          "snomed": "433144002",
+          "onset": "2025-03-13",
+          "status": "active"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

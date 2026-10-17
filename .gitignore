@@ -15,8 +15,12 @@ htmlcov/
 build/
 dist/
 
-# Synthea repository
+# Data
+data/synthea/
 data/synthea_repo
+data/.venv/
+__pycache__/
+.cache/
 
 # Node
 node_modules/

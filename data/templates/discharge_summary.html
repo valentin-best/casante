@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+{% include '_base.css' %}
+.head { border-bottom: 3px double {{ style.accent }}; padding-bottom: 3mm; margin-bottom: 4mm; }
+.pt { background: #f4f4f4; padding: 3mm 4mm; margin: 3mm 0; }
+</style></head><body>
+<div class="head"><h1>{{ facility.name }}</h1>
+<div class="fac">{{ facility.address }} · Tel {{ facility.phone }}</div></div>
+<h1 style="color:#000">DISCHARGE SUMMARY</h1>
+<div class="pt">
+<div class="row">Patient: {{ patient.name }}</div>
+<div class="row">Date of birth: {{ patient.dob }} · Sex: {{ patient.sex }}</div>
+<div class="row">MRN: {{ patient.mrn }}</div>
+<div class="row">Discharge date: {{ date }}</div>
+<div class="row">Attending physician: {{ provider }}</div>
+</div>
+<h2>Diagnoses</h2>
+{% for c in conditions %}<div class="row">{{ c.name }} (since {{ c.onset }}, {{ c.status }})</div>
+{% else %}<div class="row">None recorded</div>{% endfor %}
+<h2>Allergies</h2>
+{% for a in allergies %}<div class="row">{{ a.substance }}{% if a.reaction %} - reaction: {{ a.reaction }}{% endif %}</div>
+{% else %}<div class="row">{{ no_allergy_text }}</div>{% endfor %}
+<h2>Medications on discharge</h2>
+{% for m in medications %}<div class="row">{{ m.line }}</div>
+{% else %}<div class="row">None</div>{% endfor %}
+{% if procedures %}<h2>Procedures during stay</h2>
+{% for p in procedures %}<div class="row">{{ p.name }} ({{ p.date }})</div>{% endfor %}{% endif %}
+<h2>Follow-up</h2>
+<div class="row">Follow up with primary care within 14 days. Return to the emergency department if symptoms worsen.</div>
+<div class="row muted" style="margin-top:8mm">Electronically signed: {{ provider }}</div>
+</body></html>

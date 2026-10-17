@@ -1,0 +1,236 @@
+{
+  "patient_id": "p14",
+  "source_bundle": "Lola232_Ariadna374_Viera553_4f083ce3-f12b-bb4b-7353-e17f0cd55b0a.json",
+  "patient": {
+    "name": "Lola Ariadna Viera",
+    "dob": "1998-09-29",
+    "sex": "Female",
+    "mrn": "MRN-632849"
+  },
+  "documents": {
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-01-13",
+      "facility": "St. Anselm Medical Center",
+      "provider": "Dr. H. Kim",
+      "medications": [
+        {
+          "name": "Jolivette 28 Day",
+          "rxcui": "757594",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "tramadol hydrochloride 50 MG Oral Tablet",
+          "rxcui": "835603",
+          "dose": "50 mg",
+          "frequency": "every 12 hours"
+        },
+        {
+          "name": "levonorgestrel 0.000813 MG/HR Intrauterine System [Liletta]",
+          "rxcui": "1605257",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 325 MG Oral Tablet",
+          "rxcui": "313782",
+          "dose": "325 mg",
+          "frequency": "twice daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2025-01-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-01-07",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2024-02-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2024-01-30",
+          "status": "resolved"
+        },
+        {
+          "name": "Sprain of ankle",
+          "snomed": "44465007",
+          "onset": "2018-09-15",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-01-27",
+      "facility": "Bayview Community Hospital",
+      "provider": "Dr. T. Alvarez",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 9.82,
+          "unit": "10*3/uL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 5.02,
+          "unit": "10*6/uL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 13.21,
+          "unit": "g/dL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 48.24,
+          "unit": "%",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 88.49,
+          "unit": "fL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 31.73,
+          "unit": "pg",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 34.69,
+          "unit": "g/dL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 45.04,
+          "unit": "fL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 194.6,
+          "unit": "10*3/uL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 14.83,
+          "unit": "fL",
+          "date": "2025-01-07"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 10.71,
+          "unit": "fL",
+          "date": "2025-01-07"
+        }
+      ]
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-08-19",
+      "facility": "Pinecrest Medical Group",
+      "provider": "Dr. E. Rossi",
+      "medications": [
+        {
+          "name": "Jolivette 28 Day",
+          "rxcui": "757594",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "tramadol hydrochloride 50 MG Oral Tablet",
+          "rxcui": "835603",
+          "dose": "50 mg",
+          "frequency": "every 12 hours"
+        },
+        {
+          "name": "levonorgestrel 0.000813 MG/HR Intrauterine System [Liletta]",
+          "rxcui": "1605257",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 325 MG Oral Tablet",
+          "rxcui": "313782",
+          "dose": "325 mg",
+          "frequency": "twice daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2025-01-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-01-07",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2024-02-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2024-01-30",
+          "status": "resolved"
+        },
+        {
+          "name": "Sprain of ankle",
+          "snomed": "44465007",
+          "onset": "2018-09-15",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

@@ -1,0 +1,243 @@
+{
+  "patient_id": "p11",
+  "source_bundle": "Jona712_Bonnie873_Marquardt819_aa616abe-1761-0c9a-7959-07544679dafd.json",
+  "patient": {
+    "name": "Jona Bonnie Marquardt",
+    "dob": "1950-08-21",
+    "sex": "Female",
+    "mrn": "MRN-216676"
+  },
+  "documents": {
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2025-01-06",
+      "facility": "St. Anselm Medical Center",
+      "provider": "Dr. K. Tanaka",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 171.3,
+          "unit": "mg/dL",
+          "date": "2025-01-06"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 146.18,
+          "unit": "mg/dL",
+          "date": "2025-01-06"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 87.05,
+          "unit": "mg/dL",
+          "date": "2025-01-06"
+        },
+        {
+          "name": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+          "loinc": "2085-9",
+          "value": 55.02,
+          "unit": "mg/dL",
+          "date": "2025-01-06"
+        },
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 5.08,
+          "unit": "10*3/uL",
+          "date": "2022-12-26"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 5.13,
+          "unit": "10*6/uL",
+          "date": "2022-12-26"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 16.61,
+          "unit": "g/dL",
+          "date": "2022-12-26"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 49.65,
+          "unit": "%",
+          "date": "2022-12-26"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 85.48,
+          "unit": "fL",
+          "date": "2022-12-26"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 31.45,
+          "unit": "pg",
+          "date": "2022-12-26"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 33.16,
+          "unit": "g/dL",
+          "date": "2022-12-26"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 41.12,
+          "unit": "fL",
+          "date": "2022-12-26"
+        }
+      ]
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2025-08-25",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. E. Rossi",
+      "medications": [
+        {
+          "name": "Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet",
+          "rxcui": "857005",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Naproxen sodium 220 MG Oral Tablet",
+          "rxcui": "849574",
+          "dose": "220 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Fracture of bone",
+          "snomed": "125605004",
+          "onset": "2023-08-24",
+          "status": "resolved"
+        },
+        {
+          "name": "Fracture of clavicle",
+          "snomed": "58150001",
+          "onset": "2023-08-24",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2021-04-08",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2020-12-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2020-12-14",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2020-05-28",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-01-12",
+      "facility": "Bayview Community Hospital",
+      "provider": "Dr. M. Okafor",
+      "medications": [
+        {
+          "name": "Acetaminophen 325 MG / HYDROcodone Bitartrate 7.5 MG Oral Tablet",
+          "rxcui": "857005",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Naproxen sodium 220 MG Oral Tablet",
+          "rxcui": "849574",
+          "dose": "220 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Fracture of bone",
+          "snomed": "125605004",
+          "onset": "2023-08-24",
+          "status": "resolved"
+        },
+        {
+          "name": "Fracture of clavicle",
+          "snomed": "58150001",
+          "onset": "2023-08-24",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2021-04-08",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2020-12-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2020-12-14",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2020-05-28",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

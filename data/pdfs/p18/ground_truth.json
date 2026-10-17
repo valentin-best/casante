@@ -1,0 +1,255 @@
+{
+  "patient_id": "p18",
+  "source_bundle": "Shondra529_Hickle134_76b20010-c318-5754-8c85-983aa538522f.json",
+  "patient": {
+    "name": "Shondra Kyra Hickle",
+    "dob": "2001-05-17",
+    "sex": "Female",
+    "mrn": "MRN-676951"
+  },
+  "documents": {
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-02-18",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. S. Johansson",
+      "medications": [
+        {
+          "name": "Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]",
+          "rxcui": "1049625",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "72 HR Fentanyl 0.025 MG/HR Transdermal System",
+          "rxcui": "245134",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Trinessa 28 Day",
+          "rxcui": "751905",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2025-09-15",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2024-08-23",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2024-08-09",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2023-04-15",
+          "status": "resolved"
+        },
+        {
+          "name": "Recurrent urinary tract infection",
+          "snomed": "197927001",
+          "onset": "2022-12-16",
+          "status": "active"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2022-08-12",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-08-20",
+      "facility": "Summit Regional Laboratory",
+      "provider": "Dr. L. Nguyen",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Glucose [Mass/volume] in Urine by Test strip",
+          "loinc": "5792-7",
+          "value": 4.72,
+          "unit": "mg/dL",
+          "date": "2023-04-15"
+        },
+        {
+          "name": "Specific gravity of Urine by Test strip",
+          "loinc": "5811-5",
+          "value": 1.01,
+          "unit": "{nominal}",
+          "date": "2023-04-15"
+        },
+        {
+          "name": "pH of Urine by Test strip",
+          "loinc": "5803-2",
+          "value": 6.45,
+          "unit": "pH",
+          "date": "2023-04-15"
+        },
+        {
+          "name": "Protein [Mass/volume] in Urine by Test strip",
+          "loinc": "5804-0",
+          "value": 8.12,
+          "unit": "mg/dL",
+          "date": "2023-04-15"
+        },
+        {
+          "name": "Leukocytes [#/area] in Urine sediment by Microscopy high power field",
+          "loinc": "5821-4",
+          "value": 42.17,
+          "unit": "/[HPF]",
+          "date": "2023-04-15"
+        },
+        {
+          "name": "Erythrocytes [#/area] in Urine sediment by Microscopy high power field",
+          "loinc": "13945-1",
+          "value": 1.27,
+          "unit": "/[HPF]",
+          "date": "2023-04-15"
+        },
+        {
+          "name": "Epithelial cells [#/area] in Urine sediment by Microscopy high power field",
+          "loinc": "5787-7",
+          "value": 1.3,
+          "unit": "/[HPF]",
+          "date": "2023-04-15"
+        },
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 4.3,
+          "unit": "10*3/uL",
+          "date": "2022-07-28"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.71,
+          "unit": "10*6/uL",
+          "date": "2022-07-28"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 15.71,
+          "unit": "g/dL",
+          "date": "2022-07-28"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 43.56,
+          "unit": "%",
+          "date": "2022-07-28"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 90.57,
+          "unit": "fL",
+          "date": "2022-07-28"
+        }
+      ]
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-09-03",
+      "facility": "Lakeshore Diagnostics",
+      "provider": "Dr. H. Kim",
+      "medications": [
+        {
+          "name": "Acetaminophen 325 MG / Oxycodone Hydrochloride 10 MG Oral Tablet [Percocet]",
+          "rxcui": "1049625",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "72 HR Fentanyl 0.025 MG/HR Transdermal System",
+          "rxcui": "245134",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Trinessa 28 Day",
+          "rxcui": "751905",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2025-09-15",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2024-08-23",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2024-08-09",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2023-04-15",
+          "status": "resolved"
+        },
+        {
+          "name": "Recurrent urinary tract infection",
+          "snomed": "197927001",
+          "onset": "2022-12-16",
+          "status": "active"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2022-08-12",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}
