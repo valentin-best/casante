@@ -22,6 +22,10 @@ data/.venv/
 __pycache__/
 .cache/
 
+# Eval
+eval/.venv/
+eval/results/mock
+
 # Node
 node_modules/
 
