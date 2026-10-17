@@ -1,0 +1,298 @@
+{
+  "patient_id": "p08",
+  "source_bundle": "Eunice461_Fay398_d3727ff2-5d7b-347f-d78c-edc4323cf890.json",
+  "patient": {
+    "name": "Eunice Diann Fay",
+    "dob": "2006-09-29",
+    "sex": "Female",
+    "mrn": "MRN-545232"
+  },
+  "documents": {
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2025-11-28",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. K. Tanaka",
+      "medications": [
+        {
+          "name": "Meperidine Hydrochloride 50 MG Oral Tablet",
+          "rxcui": "861467",
+          "dose": "50 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "1 ML medroxyprogesterone acetate 150 MG/ML Injection",
+          "rxcui": "1000126",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule",
+          "rxcui": "1648755",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Sulfonamide antibiotics",
+          "reaction": "Rash"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-11-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2025-11-09",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion injury of brain",
+          "snomed": "110030002",
+          "onset": "2024-08-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion with no loss of consciousness",
+          "snomed": "62106007",
+          "onset": "2024-08-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2022-11-25",
+          "status": "resolved"
+        },
+        {
+          "name": "Injury of knee",
+          "snomed": "125601008",
+          "onset": "2020-03-02",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2025-12-12",
+      "facility": "Harborview Pathology Services",
+      "provider": "Dr. L. Nguyen",
+      "medications": [
+        {
+          "name": "Meperidine Hydrochloride 50 MG Oral Tablet",
+          "rxcui": "861467",
+          "dose": "100 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "1 ML medroxyprogesterone acetate 150 MG/ML Injection",
+          "rxcui": "1000126",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule",
+          "rxcui": "1648755",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-11-28",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2025-11-09",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion injury of brain",
+          "snomed": "110030002",
+          "onset": "2024-08-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion with no loss of consciousness",
+          "snomed": "62106007",
+          "onset": "2024-08-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2022-11-25",
+          "status": "resolved"
+        },
+        {
+          "name": "Injury of knee",
+          "snomed": "125601008",
+          "onset": "2020-03-02",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2025-12-12"
+        },
+        {
+          "name": "Dental fluoride treatment",
+          "date": "2025-12-12"
+        }
+      ],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-08-28",
+      "facility": "Pinecrest Medical Group",
+      "provider": "Dr. E. Rossi",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 4.02,
+          "unit": "10*3/uL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 5.23,
+          "unit": "10*6/uL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 15.76,
+          "unit": "g/dL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 44.0,
+          "unit": "%",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 94.95,
+          "unit": "fL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 31.09,
+          "unit": "pg",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 35.2,
+          "unit": "g/dL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 43.38,
+          "unit": "fL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 196.87,
+          "unit": "10*3/uL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 15.39,
+          "unit": "fL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 11.05,
+          "unit": "fL",
+          "date": "2025-11-09"
+        },
+        {
+          "name": "Glucose [Mass/volume] in Serum or Plasma",
+          "loinc": "2345-7",
+          "value": 95.09,
+          "unit": "mg/dL",
+          "date": "2025-11-09"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": [
+    {
+      "type": "dose_conflict",
+      "medication": "Meperidine Hydrochloride 50 MG Oral Tablet",
+      "rxcui": "861467",
+      "values": [
+        {
+          "document": "clinic_letter",
+          "date": "2025-11-28",
+          "dose": "50 mg"
+        },
+        {
+          "document": "discharge_summary",
+          "date": "2025-12-12",
+          "dose": "100 mg"
+        }
+      ]
+    },
+    {
+      "type": "allergy_only_in_oldest",
+      "allergy": "Sulfonamide antibiotics",
+      "reaction": "Rash",
+      "present_in": "clinic_letter",
+      "absent_from": "discharge_summary",
+      "dates": {
+        "present": "2025-11-28",
+        "absent": "2025-12-12"
+      }
+    }
+  ]
+}

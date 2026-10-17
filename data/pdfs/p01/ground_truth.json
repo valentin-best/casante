@@ -1,0 +1,357 @@
+{
+  "patient_id": "p01",
+  "source_bundle": "Angel97_Luettgen772_62f60bdb-cc5c-8305-b98b-f2b229a55eca.json",
+  "patient": {
+    "name": "Angel Rocio Luettgen",
+    "dob": "1999-03-17",
+    "sex": "Female",
+    "mrn": "MRN-561265"
+  },
+  "documents": {
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-01-07",
+      "facility": "Pinecrest Medical Group",
+      "provider": "Dr. M. Okafor",
+      "medications": [
+        {
+          "name": "Jolivette 28 Day",
+          "rxcui": "757594",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "doxycycline hyclate 100 MG",
+          "rxcui": "1649987",
+          "dose": "100 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Loratadine 5 MG Chewable Tablet",
+          "rxcui": "665078",
+          "dose": "5 mg",
+          "frequency": "three times daily"
+        },
+        {
+          "name": "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+          "rxcui": "1870230",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Bee venom",
+          "reaction": null
+        },
+        {
+          "substance": "Mold",
+          "reaction": "Nasal discharge present"
+        },
+        {
+          "substance": "House dust mite",
+          "reaction": null
+        },
+        {
+          "substance": "Animal dander",
+          "reaction": "Wheal"
+        },
+        {
+          "substance": "Grass pollen",
+          "reaction": null
+        },
+        {
+          "substance": "Tree pollen",
+          "reaction": null
+        },
+        {
+          "substance": "Penicillin V",
+          "reaction": "Wheal"
+        },
+        {
+          "substance": "Cow's milk",
+          "reaction": "Finding of vomiting"
+        },
+        {
+          "substance": "Latex",
+          "reaction": "Contact dermatitis"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2024-08-27",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2024-05-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2022-01-18",
+          "status": "resolved"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2021-06-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2019-03-23",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2024-06-05"
+        },
+        {
+          "name": "Examination of gingivae",
+          "date": "2024-06-05"
+        }
+      ],
+      "labs": []
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-04-06",
+      "facility": "Bayview Community Hospital",
+      "provider": "Dr. S. Johansson",
+      "medications": [
+        {
+          "name": "Jolivette 28 Day",
+          "rxcui": "757594",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "doxycycline hyclate 100 MG",
+          "rxcui": "1649987",
+          "dose": "200 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Loratadine 5 MG Chewable Tablet",
+          "rxcui": "665078",
+          "dose": "5 mg",
+          "frequency": "three times daily"
+        },
+        {
+          "name": "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+          "rxcui": "1870230",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Bee venom",
+          "reaction": null
+        },
+        {
+          "substance": "Mold",
+          "reaction": "Nasal discharge present"
+        },
+        {
+          "substance": "House dust mite",
+          "reaction": null
+        },
+        {
+          "substance": "Animal dander",
+          "reaction": "Wheal"
+        },
+        {
+          "substance": "Grass pollen",
+          "reaction": null
+        },
+        {
+          "substance": "Tree pollen",
+          "reaction": null
+        },
+        {
+          "substance": "Penicillin V",
+          "reaction": "Wheal"
+        },
+        {
+          "substance": "Cow's milk",
+          "reaction": "Finding of vomiting"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2026-04-06",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2024-08-27",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2024-05-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2022-01-18",
+          "status": "resolved"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2021-06-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2019-03-23",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-04-15",
+      "facility": "Maple Grove Family Clinic",
+      "provider": "Dr. M. Okafor",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 8.63,
+          "unit": "10*3/uL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.68,
+          "unit": "10*6/uL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 12.74,
+          "unit": "g/dL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 43.36,
+          "unit": "%",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 89.25,
+          "unit": "fL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 30.66,
+          "unit": "pg",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 33.95,
+          "unit": "g/dL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 41.97,
+          "unit": "fL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 314.98,
+          "unit": "10*3/uL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 16.82,
+          "unit": "fL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 9.76,
+          "unit": "fL",
+          "date": "2021-05-19"
+        },
+        {
+          "name": "Glucose [Mass/volume] in Urine by Test strip",
+          "loinc": "5792-7",
+          "value": 13.59,
+          "unit": "mg/dL",
+          "date": "2019-03-23"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": [
+    {
+      "type": "dose_conflict",
+      "medication": "doxycycline hyclate 100 MG",
+      "rxcui": "1649987",
+      "values": [
+        {
+          "document": "discharge_summary",
+          "date": "2026-01-07",
+          "dose": "100 mg"
+        },
+        {
+          "document": "clinic_letter",
+          "date": "2026-04-06",
+          "dose": "200 mg"
+        }
+      ]
+    },
+    {
+      "type": "allergy_only_in_oldest",
+      "allergy": "Latex",
+      "reaction": "Contact dermatitis",
+      "present_in": "discharge_summary",
+      "absent_from": "clinic_letter",
+      "dates": {
+        "present": "2026-01-07",
+        "absent": "2026-04-06"
+      }
+    }
+  ]
+}

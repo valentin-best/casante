@@ -1,0 +1,255 @@
+{
+  "patient_id": "p02",
+  "source_bundle": "Antonia30_Garibay313_aee7bbe1-0c45-c028-1e62-1f4cdb30c273.json",
+  "patient": {
+    "name": "Antonia Rosa Garibay",
+    "dob": "2009-11-09",
+    "sex": "Female",
+    "mrn": "MRN-915045"
+  },
+  "documents": {
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-09-21",
+      "facility": "Riverside General Hospital",
+      "provider": "Dr. H. Kim",
+      "medications": [
+        {
+          "name": "Yaz 28 Day",
+          "rxcui": "748856",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule",
+          "rxcui": "1648755",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Natazia 28 Day",
+          "rxcui": "978950",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Trinessa 28 Day",
+          "rxcui": "751905",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Pre-eclampsia",
+          "snomed": "398254007",
+          "onset": "2026-08-10",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bacterial sinusitis",
+          "snomed": "75498004",
+          "onset": "2025-12-24",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-12-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2025-09-07",
+          "status": "resolved"
+        },
+        {
+          "name": "Seizure disorder",
+          "snomed": "128613002",
+          "onset": "2023-02-21",
+          "status": "active"
+        },
+        {
+          "name": "Fracture of bone",
+          "snomed": "125605004",
+          "onset": "2021-12-20",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-09-28",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. A. Patel",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 6.88,
+          "unit": "10*3/uL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.07,
+          "unit": "10*6/uL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 12.28,
+          "unit": "g/dL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 36.45,
+          "unit": "%",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 90.3,
+          "unit": "fL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 28.59,
+          "unit": "pg",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 33.86,
+          "unit": "g/dL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 42.51,
+          "unit": "fL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 363.72,
+          "unit": "10*3/uL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 14.75,
+          "unit": "fL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 11.98,
+          "unit": "fL",
+          "date": "2025-12-22"
+        },
+        {
+          "name": "Glucose [Mass/volume] in Urine by Test strip",
+          "loinc": "5792-7",
+          "value": 0.78,
+          "unit": "mg/dL",
+          "date": "2025-09-07"
+        }
+      ]
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-10-05",
+      "facility": "Lakeshore Diagnostics",
+      "provider": "Dr. R. Fernandez",
+      "medications": [
+        {
+          "name": "Yaz 28 Day",
+          "rxcui": "748856",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule",
+          "rxcui": "1648755",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Natazia 28 Day",
+          "rxcui": "978950",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Trinessa 28 Day",
+          "rxcui": "751905",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Pre-eclampsia",
+          "snomed": "398254007",
+          "onset": "2026-08-10",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bacterial sinusitis",
+          "snomed": "75498004",
+          "onset": "2025-12-24",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2025-12-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2025-09-07",
+          "status": "resolved"
+        },
+        {
+          "name": "Seizure disorder",
+          "snomed": "128613002",
+          "onset": "2023-02-21",
+          "status": "active"
+        },
+        {
+          "name": "Fracture of bone",
+          "snomed": "125605004",
+          "onset": "2021-12-20",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

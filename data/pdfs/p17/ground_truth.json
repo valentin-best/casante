@@ -1,0 +1,232 @@
+{
+  "patient_id": "p17",
+  "source_bundle": "Rubén780_Lemus978_9661a432-4630-2cd9-142c-386845fae837.json",
+  "patient": {
+    "name": "Rubén Benito Lemus",
+    "dob": "1990-05-09",
+    "sex": "Male",
+    "mrn": "MRN-384675"
+  },
+  "documents": {
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2022-02-21",
+      "facility": "Willow Creek Physicians",
+      "provider": "Dr. M. Okafor",
+      "medications": [
+        {
+          "name": "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+          "rxcui": "1043400",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Metformin hydrochloride 500 MG Oral Tablet",
+          "rxcui": "861007",
+          "dose": "500 mg",
+          "frequency": "twice daily"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Penicillin",
+          "reaction": "Hives"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2022-02-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic sinusitis",
+          "snomed": "40055000",
+          "onset": "2012-11-09",
+          "status": "active"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2024-04-21",
+      "facility": "Northgate Internal Medicine",
+      "provider": "Dr. A. Patel",
+      "medications": [
+        {
+          "name": "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+          "rxcui": "1043400",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Metformin hydrochloride 500 MG Oral Tablet",
+          "rxcui": "861007",
+          "dose": "1000 mg",
+          "frequency": "twice daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2024-04-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2022-02-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic sinusitis",
+          "snomed": "40055000",
+          "onset": "2012-11-09",
+          "status": "active"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Measurement of respiratory function",
+          "date": "2022-02-21"
+        },
+        {
+          "name": "Medication reconciliation",
+          "date": "2021-07-21"
+        }
+      ],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2024-07-24",
+      "facility": "Cedar Valley Health Partners",
+      "provider": "Dr. T. Alvarez",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 7.01,
+          "unit": "10*3/uL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.86,
+          "unit": "10*6/uL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 13.22,
+          "unit": "g/dL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 42.32,
+          "unit": "%",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 84.33,
+          "unit": "fL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 28.8,
+          "unit": "pg",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 34.76,
+          "unit": "g/dL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 42.44,
+          "unit": "fL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 358.8,
+          "unit": "10*3/uL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 16.58,
+          "unit": "fL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 10.2,
+          "unit": "fL",
+          "date": "2024-07-24"
+        },
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 190.62,
+          "unit": "mg/dL",
+          "date": "2024-07-24"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": [
+    {
+      "type": "dose_conflict",
+      "medication": "Metformin hydrochloride 500 MG Oral Tablet",
+      "rxcui": "861007",
+      "values": [
+        {
+          "document": "clinic_letter",
+          "date": "2022-02-21",
+          "dose": "500 mg"
+        },
+        {
+          "document": "discharge_summary",
+          "date": "2024-04-21",
+          "dose": "1000 mg"
+        }
+      ]
+    },
+    {
+      "type": "allergy_only_in_oldest",
+      "allergy": "Penicillin",
+      "reaction": "Hives",
+      "present_in": "clinic_letter",
+      "absent_from": "discharge_summary",
+      "dates": {
+        "present": "2022-02-21",
+        "absent": "2024-04-21"
+      }
+    }
+  ]
+}

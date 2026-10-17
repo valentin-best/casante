@@ -1,0 +1,240 @@
+{
+  "patient_id": "p19",
+  "source_bundle": "Tennille443_Denna536_Feeney44_e74367bd-7385-97dc-2c7f-251b4cd9fe29.json",
+  "patient": {
+    "name": "Tennille Denna Feeney",
+    "dob": "1994-03-10",
+    "sex": "Female",
+    "mrn": "MRN-538261"
+  },
+  "documents": {
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-03-26",
+      "facility": "Summit Regional Laboratory",
+      "provider": "Dr. K. Tanaka",
+      "medications": [
+        {
+          "name": "168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System",
+          "rxcui": "1534809",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "1 ML medroxyprogesterone acetate 150 MG/ML Injection",
+          "rxcui": "1000126",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet",
+          "rxcui": "562251",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Pre-eclampsia",
+          "snomed": "398254007",
+          "onset": "2024-05-30",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2022-08-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2021-04-15",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic sinusitis",
+          "snomed": "40055000",
+          "onset": "2002-11-14",
+          "status": "active"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-06-25",
+      "facility": "Pinecrest Medical Group",
+      "provider": "Dr. L. Nguyen",
+      "medications": [
+        {
+          "name": "168 HR Ethinyl Estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System",
+          "rxcui": "1534809",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "1 ML medroxyprogesterone acetate 150 MG/ML Injection",
+          "rxcui": "1000126",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet",
+          "rxcui": "562251",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Pre-eclampsia",
+          "snomed": "398254007",
+          "onset": "2024-05-30",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2022-08-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2021-04-15",
+          "status": "resolved"
+        },
+        {
+          "name": "Chronic sinusitis",
+          "snomed": "40055000",
+          "onset": "2002-11-14",
+          "status": "active"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2025-06-05"
+        },
+        {
+          "name": "Dental fluoride treatment",
+          "date": "2025-06-05"
+        }
+      ],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-09-24",
+      "facility": "St. Anselm Medical Center",
+      "provider": "Dr. C. Dubois",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 197.46,
+          "unit": "mg/dL",
+          "date": "2025-05-22"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 128.92,
+          "unit": "mg/dL",
+          "date": "2025-05-22"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 122.59,
+          "unit": "mg/dL",
+          "date": "2025-05-22"
+        },
+        {
+          "name": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+          "loinc": "2085-9",
+          "value": 49.08,
+          "unit": "mg/dL",
+          "date": "2025-05-22"
+        },
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 9.94,
+          "unit": "10*3/uL",
+          "date": "2022-05-19"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.21,
+          "unit": "10*6/uL",
+          "date": "2022-05-19"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 12.56,
+          "unit": "g/dL",
+          "date": "2022-05-19"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 35.4,
+          "unit": "%",
+          "date": "2022-05-19"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 82.17,
+          "unit": "fL",
+          "date": "2022-05-19"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 31.35,
+          "unit": "pg",
+          "date": "2022-05-19"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 34.78,
+          "unit": "g/dL",
+          "date": "2022-05-19"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 44.62,
+          "unit": "fL",
+          "date": "2022-05-19"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": []
+}

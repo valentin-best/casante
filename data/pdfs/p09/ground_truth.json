@@ -1,0 +1,289 @@
+{
+  "patient_id": "p09",
+  "source_bundle": "Herschel574_Greenfelder433_c86c400e-ff88-a1e3-2e23-caa4d8311f47.json",
+  "patient": {
+    "name": "Herschel Hans Greenfelder",
+    "dob": "1994-03-25",
+    "sex": "Male",
+    "mrn": "MRN-539090"
+  },
+  "documents": {
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2023-07-14",
+      "facility": "St. Anselm Medical Center",
+      "provider": "Dr. A. Patel",
+      "medications": [
+        {
+          "name": "sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet",
+          "rxcui": "198335",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+          "rxcui": "1043400",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet",
+          "rxcui": "562251",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Lisinopril 10 MG Oral Tablet",
+          "rxcui": "314076",
+          "dose": "10 mg",
+          "frequency": "every 12 hours"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Latex",
+          "reaction": "Contact dermatitis"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2023-06-30",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2023-06-19",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2022-03-11",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2018-08-17",
+          "status": "resolved"
+        },
+        {
+          "name": "Streptococcal sore throat",
+          "snomed": "43878008",
+          "onset": "2017-01-08",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2025-06-06",
+      "facility": "Summit Regional Laboratory",
+      "provider": "Dr. L. Nguyen",
+      "medications": [
+        {
+          "name": "sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet",
+          "rxcui": "198335",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+          "rxcui": "1043400",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Amoxicillin 250 MG / Clavulanate 125 MG Oral Tablet",
+          "rxcui": "562251",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Lisinopril 10 MG Oral Tablet",
+          "rxcui": "314076",
+          "dose": "20 mg",
+          "frequency": "every 12 hours"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2023-06-30",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2023-06-19",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2022-03-11",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2018-08-17",
+          "status": "resolved"
+        },
+        {
+          "name": "Streptococcal sore throat",
+          "snomed": "43878008",
+          "onset": "2017-01-08",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-01-27",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. S. Johansson",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Glucose [Mass/volume] in Urine by Test strip",
+          "loinc": "5792-7",
+          "value": 1.59,
+          "unit": "mg/dL",
+          "date": "2026-01-27"
+        },
+        {
+          "name": "Specific gravity of Urine by Test strip",
+          "loinc": "5811-5",
+          "value": 1.01,
+          "unit": "{nominal}",
+          "date": "2026-01-27"
+        },
+        {
+          "name": "pH of Urine by Test strip",
+          "loinc": "5803-2",
+          "value": 6.01,
+          "unit": "pH",
+          "date": "2026-01-27"
+        },
+        {
+          "name": "Protein [Mass/volume] in Urine by Test strip",
+          "loinc": "5804-0",
+          "value": 10.42,
+          "unit": "mg/dL",
+          "date": "2026-01-27"
+        },
+        {
+          "name": "Leukocytes [#/area] in Urine sediment by Microscopy high power field",
+          "loinc": "5821-4",
+          "value": 11.97,
+          "unit": "/[HPF]",
+          "date": "2026-01-27"
+        },
+        {
+          "name": "Erythrocytes [#/area] in Urine sediment by Microscopy high power field",
+          "loinc": "13945-1",
+          "value": 2.12,
+          "unit": "/[HPF]",
+          "date": "2026-01-27"
+        },
+        {
+          "name": "Epithelial cells [#/area] in Urine sediment by Microscopy high power field",
+          "loinc": "5787-7",
+          "value": 2.25,
+          "unit": "/[HPF]",
+          "date": "2026-01-27"
+        },
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 183.81,
+          "unit": "mg/dL",
+          "date": "2025-06-06"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 142.2,
+          "unit": "mg/dL",
+          "date": "2025-06-06"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 101.03,
+          "unit": "mg/dL",
+          "date": "2025-06-06"
+        },
+        {
+          "name": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+          "loinc": "2085-9",
+          "value": 54.34,
+          "unit": "mg/dL",
+          "date": "2025-06-06"
+        },
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 6.86,
+          "unit": "10*3/uL",
+          "date": "2022-06-03"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": [
+    {
+      "type": "dose_conflict",
+      "medication": "Lisinopril 10 MG Oral Tablet",
+      "rxcui": "314076",
+      "values": [
+        {
+          "document": "clinic_letter",
+          "date": "2023-07-14",
+          "dose": "10 mg"
+        },
+        {
+          "document": "discharge_summary",
+          "date": "2025-06-06",
+          "dose": "20 mg"
+        }
+      ]
+    },
+    {
+      "type": "allergy_only_in_oldest",
+      "allergy": "Latex",
+      "reaction": "Contact dermatitis",
+      "present_in": "clinic_letter",
+      "absent_from": "discharge_summary",
+      "dates": {
+        "present": "2023-07-14",
+        "absent": "2025-06-06"
+      }
+    }
+  ]
+}

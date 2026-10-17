@@ -1,0 +1,252 @@
+{
+  "patient_id": "p15",
+  "source_bundle": "Mauro926_Braun514_2d68ad16-268a-478c-1f84-d0f1976e1a46.json",
+  "patient": {
+    "name": "Mauro Isaias Braun",
+    "dob": "1990-06-25",
+    "sex": "Male",
+    "mrn": "MRN-659791"
+  },
+  "documents": {
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2023-11-05",
+      "facility": "Lakeshore Diagnostics",
+      "provider": "Dr. T. Alvarez",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 156.88,
+          "unit": "mg/dL",
+          "date": "2021-09-06"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 146.79,
+          "unit": "mg/dL",
+          "date": "2021-09-06"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 93.33,
+          "unit": "mg/dL",
+          "date": "2021-09-06"
+        },
+        {
+          "name": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+          "loinc": "2085-9",
+          "value": 34.19,
+          "unit": "mg/dL",
+          "date": "2021-09-06"
+        },
+        {
+          "name": "Lactate [Moles/volume] in Blood",
+          "loinc": "32693-4",
+          "value": 3.59,
+          "unit": "mmol/L",
+          "date": "2021-08-18"
+        },
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 5.81,
+          "unit": "10*3/uL",
+          "date": "2018-09-03"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.92,
+          "unit": "10*6/uL",
+          "date": "2018-09-03"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 17.44,
+          "unit": "g/dL",
+          "date": "2018-09-03"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 37.57,
+          "unit": "%",
+          "date": "2018-09-03"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 93.19,
+          "unit": "fL",
+          "date": "2018-09-03"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 29.43,
+          "unit": "pg",
+          "date": "2018-09-03"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 34.27,
+          "unit": "g/dL",
+          "date": "2018-09-03"
+        }
+      ]
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2023-12-03",
+      "facility": "Northgate Internal Medicine",
+      "provider": "Dr. T. Alvarez",
+      "medications": [
+        {
+          "name": "4 ML norepinephrine 1 MG/ML Injection",
+          "rxcui": "242969",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "piperacillin 2000 MG / tazobactam 250 MG Injection",
+          "rxcui": "1659131",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "150 ML vancomycin 5 MG/ML Injection",
+          "rxcui": "1807510",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Chronic sinusitis",
+          "snomed": "40055000",
+          "onset": "2023-11-05",
+          "status": "active"
+        },
+        {
+          "name": "Acute bacterial sinusitis",
+          "snomed": "75498004",
+          "onset": "2023-10-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2021-09-06",
+          "status": "resolved"
+        },
+        {
+          "name": "Septic shock",
+          "snomed": "76571007",
+          "onset": "2021-08-06",
+          "status": "active"
+        },
+        {
+          "name": "Sepsis",
+          "snomed": "91302008",
+          "onset": "2021-08-06",
+          "status": "active"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2021-09-20"
+        },
+        {
+          "name": "Examination of gingivae",
+          "date": "2021-09-20"
+        }
+      ],
+      "labs": []
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2024-09-09",
+      "facility": "Willow Creek Physicians",
+      "provider": "Dr. C. Dubois",
+      "medications": [
+        {
+          "name": "4 ML norepinephrine 1 MG/ML Injection",
+          "rxcui": "242969",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "piperacillin 2000 MG / tazobactam 250 MG Injection",
+          "rxcui": "1659131",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "150 ML vancomycin 5 MG/ML Injection",
+          "rxcui": "1807510",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Chronic sinusitis",
+          "snomed": "40055000",
+          "onset": "2023-11-05",
+          "status": "active"
+        },
+        {
+          "name": "Acute bacterial sinusitis",
+          "snomed": "75498004",
+          "onset": "2023-10-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2021-09-06",
+          "status": "resolved"
+        },
+        {
+          "name": "Septic shock",
+          "snomed": "76571007",
+          "onset": "2021-08-06",
+          "status": "active"
+        },
+        {
+          "name": "Sepsis",
+          "snomed": "91302008",
+          "onset": "2021-08-06",
+          "status": "active"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

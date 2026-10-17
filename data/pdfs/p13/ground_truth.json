@@ -1,0 +1,262 @@
+{
+  "patient_id": "p13",
+  "source_bundle": "Lindsay928_Deja232_Heathcote539_46976cf7-b0bf-be20-39a5-9f425a52886d.json",
+  "patient": {
+    "name": "Lindsay Deja Heathcote",
+    "dob": "1987-01-16",
+    "sex": "Female",
+    "mrn": "MRN-150489"
+  },
+  "documents": {
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2024-05-05",
+      "facility": "Harborview Pathology Services",
+      "provider": "Dr. T. Alvarez",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 209.55,
+          "unit": "mg/dL",
+          "date": "2024-04-05"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 124.11,
+          "unit": "mg/dL",
+          "date": "2024-04-05"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 132.73,
+          "unit": "mg/dL",
+          "date": "2024-04-05"
+        },
+        {
+          "name": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+          "loinc": "2085-9",
+          "value": 52,
+          "unit": "mg/dL",
+          "date": "2024-04-05"
+        },
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 6.88,
+          "unit": "10*3/uL",
+          "date": "2021-04-02"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 5.36,
+          "unit": "10*6/uL",
+          "date": "2021-04-02"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 12.94,
+          "unit": "g/dL",
+          "date": "2021-04-02"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 41.32,
+          "unit": "%",
+          "date": "2021-04-02"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 93.44,
+          "unit": "fL",
+          "date": "2021-04-02"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 27.39,
+          "unit": "pg",
+          "date": "2021-04-02"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 35.52,
+          "unit": "g/dL",
+          "date": "2021-04-02"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 40.07,
+          "unit": "fL",
+          "date": "2021-04-02"
+        }
+      ]
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2024-05-26",
+      "facility": "Cedar Valley Health Partners",
+      "provider": "Dr. S. Johansson",
+      "medications": [
+        {
+          "name": "Ibuprofen 200 MG Oral Tablet",
+          "rxcui": "310965",
+          "dose": "200 mg",
+          "frequency": "at bedtime"
+        },
+        {
+          "name": "Etonogestrel 68 MG Drug Implant",
+          "rxcui": "389221",
+          "dose": "68 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Penicillin V Potassium 500 MG Oral Tablet",
+          "rxcui": "834102",
+          "dose": "500 mg",
+          "frequency": "every 12 hours"
+        },
+        {
+          "name": "Acetaminophen 325 MG Oral Tablet",
+          "rxcui": "313782",
+          "dose": "325 mg",
+          "frequency": "twice daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2019-09-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Streptococcal sore throat",
+          "snomed": "43878008",
+          "onset": "2018-04-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2017-07-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2017-06-26",
+          "status": "resolved"
+        },
+        {
+          "name": "Loss of teeth",
+          "snomed": "37320007",
+          "onset": "2015-04-17",
+          "status": "active"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Fitting of denture",
+          "date": "2024-05-26"
+        },
+        {
+          "name": "Dental plain X-ray bitewing",
+          "date": "2024-05-05"
+        },
+        {
+          "name": "Take oral or dental impression",
+          "date": "2024-05-05"
+        }
+      ],
+      "labs": []
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2025-11-21",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. S. Johansson",
+      "medications": [
+        {
+          "name": "Ibuprofen 200 MG Oral Tablet",
+          "rxcui": "310965",
+          "dose": "200 mg",
+          "frequency": "at bedtime"
+        },
+        {
+          "name": "Etonogestrel 68 MG Drug Implant",
+          "rxcui": "389221",
+          "dose": "68 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Penicillin V Potassium 500 MG Oral Tablet",
+          "rxcui": "834102",
+          "dose": "500 mg",
+          "frequency": "every 12 hours"
+        },
+        {
+          "name": "Acetaminophen 325 MG Oral Tablet",
+          "rxcui": "313782",
+          "dose": "325 mg",
+          "frequency": "twice daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Sprain of wrist",
+          "snomed": "70704007",
+          "onset": "2025-11-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2019-09-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Streptococcal sore throat",
+          "snomed": "43878008",
+          "onset": "2018-04-22",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2017-07-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2017-06-26",
+          "status": "resolved"
+        },
+        {
+          "name": "Loss of teeth",
+          "snomed": "37320007",
+          "onset": "2015-04-17",
+          "status": "active"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

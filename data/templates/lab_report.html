@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+{% include '_base.css' %}
+body { font-family: {{ style.font }}; }
+.box { border: 1.5px solid {{ style.accent }}; padding: 3mm 4mm; margin: 4mm 0; }
+h1 { text-align: center; text-transform: uppercase; letter-spacing: .1em; }
+.lab { border-bottom: 0.6px dotted #999; padding: 1.2mm 0; margin: 0; }
+</style></head><body>
+<h1>{{ facility.name }}</h1>
+<div class="fac" style="text-align:center">Clinical Laboratory · {{ facility.address }} · Tel {{ facility.phone }}</div>
+<h1 style="font-size:13pt;color:#000;margin-top:5mm">Laboratory Report</h1>
+<div class="box">
+<div class="row">Patient: {{ patient.name }}</div>
+<div class="row">DOB: {{ patient.dob }} · Sex: {{ patient.sex }} · MRN: {{ patient.mrn }}</div>
+<div class="row">Report date: {{ date }}</div>
+<div class="row">Ordering physician: {{ provider }}</div>
+</div>
+<h2>Results</h2>
+{% for l in labs %}<div class="lab">{{ l.line }}</div>
+{% else %}<div class="row">No results</div>{% endfor %}
+<div class="row muted" style="margin-top:8mm">Results reviewed and released by the laboratory director.</div>
+</body></html>

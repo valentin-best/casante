@@ -1,0 +1,249 @@
+{
+  "patient_id": "p06",
+  "source_bundle": "Eliseo499_Nader710_2c167999-289d-95fa-5c27-7d8b8d35348c.json",
+  "patient": {
+    "name": "Eliseo Laverne Nader",
+    "dob": "1998-06-10",
+    "sex": "Male",
+    "mrn": "MRN-888990"
+  },
+  "documents": {
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-09-30",
+      "facility": "Willow Creek Physicians",
+      "provider": "Dr. E. Rossi",
+      "medications": [
+        {
+          "name": "Naproxen sodium 220 MG Oral Tablet",
+          "rxcui": "849574",
+          "dose": "220 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+          "rxcui": "856987",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 325 MG Oral Tablet",
+          "rxcui": "313782",
+          "dose": "325 mg",
+          "frequency": "every 12 hours"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2026-09-30",
+          "status": "active"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2025-07-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Sprain of ankle",
+          "snomed": "44465007",
+          "onset": "2024-08-03",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2019-05-01",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-10-05",
+      "facility": "Summit Regional Laboratory",
+      "provider": "Dr. S. Johansson",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 4.83,
+          "unit": "10*3/uL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.45,
+          "unit": "10*6/uL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 12.5,
+          "unit": "g/dL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 49.66,
+          "unit": "%",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 84.57,
+          "unit": "fL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 30.78,
+          "unit": "pg",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 34.18,
+          "unit": "g/dL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 39.13,
+          "unit": "fL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 167.55,
+          "unit": "10*3/uL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 11.39,
+          "unit": "fL",
+          "date": "2024-09-18"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 10.64,
+          "unit": "fL",
+          "date": "2024-09-18"
+        }
+      ]
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-10-14",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. K. Tanaka",
+      "medications": [
+        {
+          "name": "Naproxen sodium 220 MG Oral Tablet",
+          "rxcui": "849574",
+          "dose": "220 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+          "rxcui": "856987",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 325 MG Oral Tablet",
+          "rxcui": "313782",
+          "dose": "325 mg",
+          "frequency": "every 12 hours"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Laceration - injury",
+          "snomed": "312608009",
+          "onset": "2026-10-05",
+          "status": "active"
+        },
+        {
+          "name": "Facial laceration",
+          "snomed": "370247008",
+          "onset": "2026-10-05",
+          "status": "active"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2026-09-30",
+          "status": "active"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2025-07-21",
+          "status": "resolved"
+        },
+        {
+          "name": "Sprain of ankle",
+          "snomed": "44465007",
+          "onset": "2024-08-03",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2019-05-01",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Dental consultation and report",
+          "date": "2026-10-14"
+        },
+        {
+          "name": "Suture open wound",
+          "date": "2026-10-05"
+        },
+        {
+          "name": "Patient referral for dental care",
+          "date": "2026-09-30"
+        }
+      ],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

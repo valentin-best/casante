@@ -1,0 +1,7 @@
+@page { size: A4; margin: 18mm 16mm 18mm 16mm; @bottom-center { content: "{{ facility.name }} · Page " counter(page) " of " counter(pages); font-size: 8pt; color: #777; } }
+body { font-family: {{ style.font }}; font-size: {{ style.size }}pt; color: #1b1b1b; line-height: 1.4; }
+h1 { font-size: 17pt; margin: 0 0 2mm 0; color: {{ style.accent }}; }
+h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: .06em; color: {{ style.accent }}; border-bottom: 1.2px solid {{ style.accent }}; padding-bottom: 1mm; margin: 7mm 0 2.5mm 0; }
+.fac { font-size: 9pt; color: #444; }
+.row { margin: 0 0 1.4mm 0; }
+.muted { color: #666; }

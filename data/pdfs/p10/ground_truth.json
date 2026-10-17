@@ -1,0 +1,268 @@
+{
+  "patient_id": "p10",
+  "source_bundle": "Isaiah615_Bins636_eb5910f1-26e6-bc6f-b300-716eae678d6f.json",
+  "patient": {
+    "name": "Isaiah Lenny Bins",
+    "dob": "1991-11-06",
+    "sex": "Male",
+    "mrn": "MRN-885725"
+  },
+  "documents": {
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2025-03-26",
+      "facility": "Maple Grove Family Clinic",
+      "provider": "Dr. H. Kim",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Hemoglobin A1c/Hemoglobin.total in Blood",
+          "loinc": "4548-4",
+          "value": 6.25,
+          "unit": "%",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Glucose [Mass/volume] in Blood",
+          "loinc": "2339-0",
+          "value": 81.79,
+          "unit": "mg/dL",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Urea nitrogen [Mass/volume] in Blood",
+          "loinc": "6299-2",
+          "value": 16.24,
+          "unit": "mg/dL",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Creatinine [Mass/volume] in Blood",
+          "loinc": "38483-4",
+          "value": 1.28,
+          "unit": "mg/dL",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Calcium [Mass/volume] in Blood",
+          "loinc": "49765-1",
+          "value": 10,
+          "unit": "mg/dL",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Sodium [Moles/volume] in Blood",
+          "loinc": "2947-0",
+          "value": 140.77,
+          "unit": "mmol/L",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Potassium [Moles/volume] in Blood",
+          "loinc": "6298-4",
+          "value": 4.95,
+          "unit": "mmol/L",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Chloride [Moles/volume] in Blood",
+          "loinc": "2069-3",
+          "value": 104.35,
+          "unit": "mmol/L",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Carbon dioxide, total [Moles/volume] in Blood",
+          "loinc": "20565-8",
+          "value": 27.62,
+          "unit": "mmol/L",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 245.53,
+          "unit": "mg/dL",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 107.43,
+          "unit": "mg/dL",
+          "date": "2025-03-12"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 173.07,
+          "unit": "mg/dL",
+          "date": "2025-03-12"
+        }
+      ]
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-03-18",
+      "facility": "Bayview Community Hospital",
+      "provider": "Dr. K. Tanaka",
+      "medications": [
+        {
+          "name": "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+          "rxcui": "856987",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Vitamin B12 5 MG/ML Injectable Solution",
+          "rxcui": "2001499",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "ciprofloxacin 500 MG Oral Tablet",
+          "rxcui": "309309",
+          "dose": "500 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2026-03-18",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2024-02-20",
+          "status": "resolved"
+        },
+        {
+          "name": "Sleep apnea",
+          "snomed": "73430006",
+          "onset": "2023-11-25",
+          "status": "active"
+        },
+        {
+          "name": "Sleep disorder",
+          "snomed": "39898005",
+          "onset": "2023-10-29",
+          "status": "active"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2022-12-14",
+          "status": "resolved"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2019-02-20",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-04-01",
+      "facility": "Oakwood Specialty Clinic",
+      "provider": "Dr. L. Nguyen",
+      "medications": [
+        {
+          "name": "Acetaminophen 300 MG / Hydrocodone Bitartrate 5 MG Oral Tablet",
+          "rxcui": "856987",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Vitamin B12 5 MG/ML Injectable Solution",
+          "rxcui": "2001499",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "ciprofloxacin 500 MG Oral Tablet",
+          "rxcui": "309309",
+          "dose": "500 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2026-03-18",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2024-02-20",
+          "status": "resolved"
+        },
+        {
+          "name": "Sleep apnea",
+          "snomed": "73430006",
+          "onset": "2023-11-25",
+          "status": "active"
+        },
+        {
+          "name": "Sleep disorder",
+          "snomed": "39898005",
+          "onset": "2023-10-29",
+          "status": "active"
+        },
+        {
+          "name": "Acute infective cystitis",
+          "snomed": "307426000",
+          "onset": "2022-12-14",
+          "status": "resolved"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2019-02-20",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2026-04-01"
+        },
+        {
+          "name": "Application of composite dental filling material to dentin of tooth following fracture of tooth",
+          "date": "2026-04-01"
+        },
+        {
+          "name": "Examination of gingivae",
+          "date": "2026-04-01"
+        }
+      ],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}

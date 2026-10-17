@@ -1,0 +1,302 @@
+{
+  "patient_id": "p04",
+  "source_bundle": "Corie618_Sofia418_Champlin946_ba419d35-0dfe-8af7-347c-eebf02485a56.json",
+  "patient": {
+    "name": "Corie Sofia Champlin",
+    "dob": "1973-06-10",
+    "sex": "Female",
+    "mrn": "MRN-737140"
+  },
+  "documents": {
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2026-01-18",
+      "facility": "Harborview Pathology Services",
+      "provider": "Dr. J. Williams",
+      "medications": [
+        {
+          "name": "Clopidogrel 75 MG Oral Tablet",
+          "rxcui": "309362",
+          "dose": "75 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Simvastatin 20 MG Oral Tablet",
+          "rxcui": "312961",
+          "dose": "20 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet",
+          "rxcui": "866412",
+          "dose": "100 mg",
+          "frequency": "at bedtime"
+        },
+        {
+          "name": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray",
+          "rxcui": "705129",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Penicillin",
+          "reaction": "Hives"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2026-01-18",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2026-01-11",
+          "status": "resolved"
+        },
+        {
+          "name": "Ischemic heart disease",
+          "snomed": "414545008",
+          "onset": "2023-06-11",
+          "status": "active"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2019-07-14",
+          "status": "resolved"
+        },
+        {
+          "name": "Anemia",
+          "snomed": "271737000",
+          "onset": "2013-06-16",
+          "status": "active"
+        },
+        {
+          "name": "Primary fibromyalgia syndrome",
+          "snomed": "95417003",
+          "onset": "2001-12-20",
+          "status": "active"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-01-25",
+      "facility": "Riverside General Hospital",
+      "provider": "Dr. H. Kim",
+      "medications": [
+        {
+          "name": "Clopidogrel 75 MG Oral Tablet",
+          "rxcui": "309362",
+          "dose": "150 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Simvastatin 20 MG Oral Tablet",
+          "rxcui": "312961",
+          "dose": "20 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet",
+          "rxcui": "866412",
+          "dose": "100 mg",
+          "frequency": "at bedtime"
+        },
+        {
+          "name": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray",
+          "rxcui": "705129",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2026-01-18",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2026-01-11",
+          "status": "resolved"
+        },
+        {
+          "name": "Ischemic heart disease",
+          "snomed": "414545008",
+          "onset": "2023-06-11",
+          "status": "active"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2019-07-14",
+          "status": "resolved"
+        },
+        {
+          "name": "Anemia",
+          "snomed": "271737000",
+          "onset": "2013-06-16",
+          "status": "active"
+        },
+        {
+          "name": "Primary fibromyalgia syndrome",
+          "snomed": "95417003",
+          "onset": "2001-12-20",
+          "status": "active"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2026-01-25"
+        },
+        {
+          "name": "Examination of gingivae",
+          "date": "2026-01-25"
+        },
+        {
+          "name": "Removal of subgingival plaque and calculus from all teeth using dental instrument",
+          "date": "2026-01-25"
+        }
+      ],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-06-28",
+      "facility": "Cedar Valley Health Partners",
+      "provider": "Dr. E. Rossi",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Hemoglobin A1c/Hemoglobin.total in Blood",
+          "loinc": "4548-4",
+          "value": 6.2,
+          "unit": "%",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Glucose [Mass/volume] in Blood",
+          "loinc": "2339-0",
+          "value": 68.19,
+          "unit": "mg/dL",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Urea nitrogen [Mass/volume] in Blood",
+          "loinc": "6299-2",
+          "value": 19.44,
+          "unit": "mg/dL",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Creatinine [Mass/volume] in Blood",
+          "loinc": "38483-4",
+          "value": 0.78,
+          "unit": "mg/dL",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Calcium [Mass/volume] in Blood",
+          "loinc": "49765-1",
+          "value": 9.41,
+          "unit": "mg/dL",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Sodium [Moles/volume] in Blood",
+          "loinc": "2947-0",
+          "value": 141.02,
+          "unit": "mmol/L",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Potassium [Moles/volume] in Blood",
+          "loinc": "6298-4",
+          "value": 3.91,
+          "unit": "mmol/L",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Chloride [Moles/volume] in Blood",
+          "loinc": "2069-3",
+          "value": 109.63,
+          "unit": "mmol/L",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Carbon dioxide, total [Moles/volume] in Blood",
+          "loinc": "20565-8",
+          "value": 28.11,
+          "unit": "mmol/L",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 189.64,
+          "unit": "mg/dL",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 144.27,
+          "unit": "mg/dL",
+          "date": "2026-06-28"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 98.15,
+          "unit": "mg/dL",
+          "date": "2026-06-28"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": [
+    {
+      "type": "dose_conflict",
+      "medication": "Clopidogrel 75 MG Oral Tablet",
+      "rxcui": "309362",
+      "values": [
+        {
+          "document": "clinic_letter",
+          "date": "2026-01-18",
+          "dose": "75 mg"
+        },
+        {
+          "document": "discharge_summary",
+          "date": "2026-01-25",
+          "dose": "150 mg"
+        }
+      ]
+    },
+    {
+      "type": "allergy_only_in_oldest",
+      "allergy": "Penicillin",
+      "reaction": "Hives",
+      "present_in": "clinic_letter",
+      "absent_from": "discharge_summary",
+      "dates": {
+        "present": "2026-01-18",
+        "absent": "2026-01-25"
+      }
+    }
+  ]
+}

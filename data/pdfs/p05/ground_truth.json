@@ -1,0 +1,282 @@
+{
+  "patient_id": "p05",
+  "source_bundle": "Dwana281_Schuppe920_982750f4-569b-5949-196b-60699bdda3fb.json",
+  "patient": {
+    "name": "Dwana Zora Schuppe",
+    "dob": "1998-10-25",
+    "sex": "Female",
+    "mrn": "MRN-340527"
+  },
+  "documents": {
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2025-12-17",
+      "facility": "Riverside General Hospital",
+      "provider": "Dr. A. Patel",
+      "medications": [
+        {
+          "name": "Hydrochlorothiazide 25 MG Oral Tablet",
+          "rxcui": "310798",
+          "dose": "25 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Fexofenadine hydrochloride 30 MG Oral Tablet",
+          "rxcui": "997488",
+          "dose": "30 mg",
+          "frequency": "three times daily"
+        },
+        {
+          "name": "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+          "rxcui": "1870230",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Mold",
+          "reaction": "Cutaneous hypersensitivity"
+        },
+        {
+          "substance": "Grass pollen",
+          "reaction": null
+        },
+        {
+          "substance": "Aspirin",
+          "reaction": "Abdominal pain"
+        },
+        {
+          "substance": "Shellfish",
+          "reaction": "Wheal"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Sprain of wrist",
+          "snomed": "70704007",
+          "onset": "2025-04-27",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2025-03-09",
+          "status": "resolved"
+        },
+        {
+          "name": "Essential hypertension",
+          "snomed": "59621000",
+          "onset": "2025-02-16",
+          "status": "active"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2024-11-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2024-01-14",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingival disease",
+          "snomed": "18718003",
+          "onset": "2024-01-14",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2026-03-01",
+      "facility": "Willow Creek Physicians",
+      "provider": "Dr. H. Kim",
+      "medications": [
+        {
+          "name": "Hydrochlorothiazide 25 MG Oral Tablet",
+          "rxcui": "310798",
+          "dose": "25 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Fexofenadine hydrochloride 30 MG Oral Tablet",
+          "rxcui": "997488",
+          "dose": "30 mg",
+          "frequency": "three times daily"
+        },
+        {
+          "name": "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+          "rxcui": "1870230",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Mold",
+          "reaction": "Cutaneous hypersensitivity"
+        },
+        {
+          "substance": "Grass pollen",
+          "reaction": null
+        },
+        {
+          "substance": "Aspirin",
+          "reaction": "Abdominal pain"
+        },
+        {
+          "substance": "Shellfish",
+          "reaction": "Wheal"
+        }
+      ],
+      "conditions": [
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2026-03-01",
+          "status": "resolved"
+        },
+        {
+          "name": "Sprain of wrist",
+          "snomed": "70704007",
+          "onset": "2025-04-27",
+          "status": "resolved"
+        },
+        {
+          "name": "Viral sinusitis",
+          "snomed": "444814009",
+          "onset": "2025-03-09",
+          "status": "resolved"
+        },
+        {
+          "name": "Essential hypertension",
+          "snomed": "59621000",
+          "onset": "2025-02-16",
+          "status": "active"
+        },
+        {
+          "name": "Acute viral pharyngitis",
+          "snomed": "195662009",
+          "onset": "2024-11-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Primary dental caries",
+          "snomed": "109570002",
+          "onset": "2024-01-14",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2026-03-15",
+      "facility": "Harborview Pathology Services",
+      "provider": "Dr. E. Rossi",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 9.15,
+          "unit": "10*3/uL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 5.42,
+          "unit": "10*6/uL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 17.25,
+          "unit": "g/dL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 48.19,
+          "unit": "%",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 94.64,
+          "unit": "fL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 28.37,
+          "unit": "pg",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 35.29,
+          "unit": "g/dL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 45.92,
+          "unit": "fL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 253.44,
+          "unit": "10*3/uL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 15.75,
+          "unit": "fL",
+          "date": "2026-03-01"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 11.89,
+          "unit": "fL",
+          "date": "2026-03-01"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": []
+}

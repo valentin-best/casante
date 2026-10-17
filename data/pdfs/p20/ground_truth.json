@@ -1,0 +1,212 @@
+{
+  "patient_id": "p20",
+  "source_bundle": "Wallace647_Effertz744_5e688e99-61b3-5c88-3f60-21df8aaced27.json",
+  "patient": {
+    "name": "Wallace Raymond Effertz",
+    "dob": "2003-09-28",
+    "sex": "Male",
+    "mrn": "MRN-622920"
+  },
+  "documents": {
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2022-11-27",
+      "facility": "Bayview Community Hospital",
+      "provider": "Dr. S. Johansson",
+      "medications": [
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Ibuprofen 200 MG Oral Tablet",
+          "rxcui": "310965",
+          "dose": "200 mg",
+          "frequency": "at bedtime"
+        },
+        {
+          "name": "Naproxen sodium 220 MG Oral Tablet",
+          "rxcui": "849574",
+          "dose": "220 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Sprain of ankle",
+          "snomed": "44465007",
+          "onset": "2021-10-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2018-11-04",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion injury of brain",
+          "snomed": "110030002",
+          "onset": "2018-10-26",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion with no loss of consciousness",
+          "snomed": "62106007",
+          "onset": "2018-10-26",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2022-12-11",
+      "facility": "Willow Creek Physicians",
+      "provider": "Dr. C. Dubois",
+      "medications": [
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Ibuprofen 200 MG Oral Tablet",
+          "rxcui": "310965",
+          "dose": "200 mg",
+          "frequency": "at bedtime"
+        },
+        {
+          "name": "Naproxen sodium 220 MG Oral Tablet",
+          "rxcui": "849574",
+          "dose": "220 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Sprain of ankle",
+          "snomed": "44465007",
+          "onset": "2021-10-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2018-11-04",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion injury of brain",
+          "snomed": "110030002",
+          "onset": "2018-10-26",
+          "status": "resolved"
+        },
+        {
+          "name": "Concussion with no loss of consciousness",
+          "snomed": "62106007",
+          "onset": "2018-10-26",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2025-11-30",
+      "facility": "Maple Grove Family Clinic",
+      "provider": "Dr. C. Dubois",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 9.38,
+          "unit": "10*3/uL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 5.24,
+          "unit": "10*6/uL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 14.96,
+          "unit": "g/dL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 49.04,
+          "unit": "%",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 82.58,
+          "unit": "fL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 27.61,
+          "unit": "pg",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 35.65,
+          "unit": "g/dL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 39.33,
+          "unit": "fL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "Platelets [#/volume] in Blood by Automated count",
+          "loinc": "777-3",
+          "value": 322.15,
+          "unit": "10*3/uL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+          "loinc": "32207-3",
+          "value": 14.62,
+          "unit": "fL",
+          "date": "2025-11-30"
+        },
+        {
+          "name": "Platelet [Entitic mean volume] in Blood by Automated count",
+          "loinc": "32623-1",
+          "value": 11.25,
+          "unit": "fL",
+          "date": "2025-11-30"
+        }
+      ]
+    }
+  },
+  "planted_conflicts": []
+}

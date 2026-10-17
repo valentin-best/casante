@@ -1,0 +1,232 @@
+{
+  "patient_id": "p03",
+  "source_bundle": "Clarinda196_Mayert710_6fbddf55-7096-b883-7cd3-260f27953080.json",
+  "patient": {
+    "name": "Clarinda Serena Mayert",
+    "dob": "1988-05-03",
+    "sex": "Female",
+    "mrn": "MRN-528121"
+  },
+  "documents": {
+    "lab_report": {
+      "file": "lab_report.pdf",
+      "date": "2023-11-28",
+      "facility": "St. Anselm Medical Center",
+      "provider": "Dr. R. Fernandez",
+      "medications": [],
+      "allergies": [],
+      "conditions": [],
+      "procedures": [],
+      "labs": [
+        {
+          "name": "Cholesterol [Mass/volume] in Serum or Plasma",
+          "loinc": "2093-3",
+          "value": 189.12,
+          "unit": "mg/dL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Triglyceride [Mass/volume] in Serum or Plasma",
+          "loinc": "2571-8",
+          "value": 135,
+          "unit": "mg/dL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+          "loinc": "18262-6",
+          "value": 96.72,
+          "unit": "mg/dL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+          "loinc": "2085-9",
+          "value": 65.4,
+          "unit": "mg/dL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Leukocytes [#/volume] in Blood by Automated count",
+          "loinc": "6690-2",
+          "value": 8.99,
+          "unit": "10*3/uL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Erythrocytes [#/volume] in Blood by Automated count",
+          "loinc": "789-8",
+          "value": 4.86,
+          "unit": "10*6/uL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Hemoglobin [Mass/volume] in Blood",
+          "loinc": "718-7",
+          "value": 13.29,
+          "unit": "g/dL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Hematocrit [Volume Fraction] of Blood by Automated count",
+          "loinc": "4544-3",
+          "value": 42.66,
+          "unit": "%",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+          "loinc": "787-2",
+          "value": 81.89,
+          "unit": "fL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "MCH [Entitic mass] by Automated count",
+          "loinc": "785-6",
+          "value": 28.07,
+          "unit": "pg",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+          "loinc": "786-4",
+          "value": 36.0,
+          "unit": "g/dL",
+          "date": "2022-07-19"
+        },
+        {
+          "name": "Erythrocyte [DistWidth] in Blood by Automated count",
+          "loinc": "788-0",
+          "value": 44.79,
+          "unit": "fL",
+          "date": "2022-07-19"
+        }
+      ]
+    },
+    "clinic_letter": {
+      "file": "clinic_letter.pdf",
+      "date": "2025-07-22",
+      "facility": "Bayview Community Hospital",
+      "provider": "Dr. J. Williams",
+      "medications": [
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena]",
+          "rxcui": "807283",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Natazia 28 Day",
+          "rxcui": "978950",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+          "rxcui": "1043400",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Infection of tooth",
+          "snomed": "427898007",
+          "onset": "2022-08-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2022-07-19",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2018-11-06",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [],
+      "labs": []
+    },
+    "discharge_summary": {
+      "file": "discharge_summary.pdf",
+      "date": "2025-08-05",
+      "facility": "Cedar Valley Health Partners",
+      "provider": "Dr. H. Kim",
+      "medications": [
+        {
+          "name": "sodium fluoride 0.0272 MG/MG Oral Gel",
+          "rxcui": "1535362",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena]",
+          "rxcui": "807283",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Natazia 28 Day",
+          "rxcui": "978950",
+          "dose": null,
+          "frequency": "as directed"
+        },
+        {
+          "name": "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+          "rxcui": "1043400",
+          "dose": null,
+          "frequency": "as directed"
+        }
+      ],
+      "allergies": [],
+      "conditions": [
+        {
+          "name": "Infection of tooth",
+          "snomed": "427898007",
+          "onset": "2022-08-02",
+          "status": "resolved"
+        },
+        {
+          "name": "Gingivitis",
+          "snomed": "66383009",
+          "onset": "2022-07-19",
+          "status": "resolved"
+        },
+        {
+          "name": "Acute bronchitis",
+          "snomed": "10509002",
+          "onset": "2018-11-06",
+          "status": "resolved"
+        }
+      ],
+      "procedures": [
+        {
+          "name": "Oral health education",
+          "date": "2025-08-05"
+        },
+        {
+          "name": "Dental fluoride treatment",
+          "date": "2025-08-05"
+        },
+        {
+          "name": "Dental plain X-ray bitewing",
+          "date": "2025-08-05"
+        }
+      ],
+      "labs": []
+    }
+  },
+  "planted_conflicts": []
+}
