@@ -39,7 +39,7 @@ class LabFlag(str, Enum):
 
 
 class Document(BaseModel):
-    type: DocumentType = Field(..., description="Type of the document")
+    type: DocumentType | None = Field(None, description="Type of the document")
     provider: str | None = Field(None, description="Provider of the document")
     date: date_type | None = Field(
         None, description="Date of the document in YYYY-MM-DD format"
@@ -120,3 +120,14 @@ class Procedure(BaseModel):
     evidence: list[str] = Field(
         ..., description="List of evidence references for the procedure"
     )
+
+
+class ExtractionResult(BaseModel):
+    """Facts extracted from one document, with line-level evidence on each fact."""
+
+    document: Document
+    medications: list[Medication] = Field(default_factory=list)
+    allergies: list[Allergy] = Field(default_factory=list)
+    conditions: list[Condition] = Field(default_factory=list)
+    labs: list[Lab] = Field(default_factory=list)
+    procedures: list[Procedure] = Field(default_factory=list)
