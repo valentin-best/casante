@@ -11,11 +11,13 @@ from app.db import BUCKET, rows, supabase
 from app.pipeline.extract import extract_document
 from app.pipeline.ingest import ingest_pdf
 from app.pipeline.normalize import lookup_drugs
+from app.pipeline.ocr import ingest_photo, read_scanned_pages
 
 log = logging.getLogger(__name__)
 
 NO_TEXT = (
-    "We couldn't find any text in this document. Photos and scans aren't supported yet."
+    "We couldn't find any text in this document. "
+    "If it's a photo, try a sharper one in good light."
 )
 GENERIC_ERROR = "Something went wrong while processing this document."
 INTERRUPTED = "Processing was interrupted. Please try again."
@@ -55,15 +57,14 @@ def process_document(document_id: str) -> None:
         )[0]
         _update(document_id, status="reading", error=None)
 
-        # TODO(#10): photos and scanned pages go through OCR here.
-        if row["content_type"] != "application/pdf":
-            raise ProcessingError(NO_TEXT)
-
         storage = supabase().storage.from_(BUCKET)
         data = storage.download(row["storage_path"])
 
         with tempfile.TemporaryDirectory() as tmp:
-            ingested = ingest_pdf(data, tmp)
+            if row["content_type"] == "application/pdf":
+                ingested = read_scanned_pages(ingest_pdf(data, tmp))
+            else:
+                ingested = ingest_photo(data, tmp)
             if not any(page.lines for page in ingested.pages):
                 raise ProcessingError(NO_TEXT)
             for page in ingested.pages:
