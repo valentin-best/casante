@@ -13,6 +13,22 @@ export type ApiDocument = {
   created_at: string;
 };
 
+// Mirrors PageOut (api/app/documents.py). Boxes are [x0, y0, x1, y1] in image pixels.
+export type PageLine = {
+  id: string;
+  page: number;
+  text: string;
+  bbox: [number, number, number, number];
+};
+
+export type DocumentPage = {
+  number: number;
+  width: number;
+  height: number;
+  image_url: string;
+  lines: PageLine[];
+};
+
 export class ApiError extends Error {}
 
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
@@ -50,6 +66,10 @@ export function startProcessing(id: string) {
 
 export function getDocument(id: string) {
   return request<ApiDocument>(`/documents/${id}`);
+}
+
+export function getPage(documentId: string, page: number) {
+  return request<DocumentPage>(`/documents/${documentId}/pages/${page}`);
 }
 
 export function getRecord() {

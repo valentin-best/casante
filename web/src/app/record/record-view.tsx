@@ -6,8 +6,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ApiError, getRecord } from "@/lib/api";
 import { buildTimeline, HealthRecord } from "@/lib/record";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { Allergies, Conditions, Labs, Medications, Timeline } from "./sections";
+import SourcePanel from "./source-panel";
 
 type State =
   | { status: "loading" }
@@ -81,7 +82,8 @@ function Record({ record }: { record: HealthRecord }) {
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground">
         Built from {count} {count === 1 ? "document" : "documents"}. The icon
-        next to each item shows how many documents mention it.
+        next to each item shows how many documents mention it. Select an item to
+        see where it came from.
       </p>
       <div className="grid items-start gap-4 lg:grid-cols-[3fr_2fr]">
         <div className="space-y-4">
@@ -100,6 +102,10 @@ function Record({ record }: { record: HealthRecord }) {
           <Timeline events={timeline} />
         </div>
       </div>
+      {/* Reads the URL, so it can't be prerendered. */}
+      <Suspense>
+        <SourcePanel record={record} documents={documents} />
+      </Suspense>
     </div>
   );
 }
