@@ -10,8 +10,11 @@ import {
 } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ApiError, DocumentPage, getPage, PageLine } from "@/lib/api";
+import { cn } from "@/lib/utils";
 import {
+  CONFLICT_QUESTION,
   DOCUMENT_TYPE_LABEL,
+  documentName,
   formatDate,
   HealthRecord,
   RecordDocument,
@@ -25,19 +28,42 @@ import { useEffect, useState } from "react";
 const ITEM_PARAM = "item";
 
 const SECTIONS = ["medications", "allergies", "conditions", "labs"] as const;
-export type ItemSection = (typeof SECTIONS)[number];
+type RecordSection = (typeof SECTIONS)[number];
+export type ItemSection = RecordSection | "conflicts";
 
 // Index into the API's array, not the display order: sections sort their items.
 export function itemHref(section: ItemSection, index: number) {
   return `?${ITEM_PARAM}=${section}.${index}`;
 }
 
-type OpenItem = { title: string; sources: Source[] };
+// A conflict shows each side with the documents that say it; an item has one side.
+type Side = { label: string | null; sources: Source[] };
+type OpenItem = { title: string; description: string | null; sides: Side[] };
+
+const ALLERGY_SIDE_LABEL: Record<string, string> = {
+  Listed: "Lists this allergy",
+  "Not listed": "Doesn't mention this allergy",
+};
 
 function findItem(record: HealthRecord, param: string | null): OpenItem | null {
   const [section, index] = param?.split(".") ?? [];
-  if (!SECTIONS.includes(section as ItemSection)) return null;
-  const item = record[section as ItemSection][Number(index)];
+  if (section === "conflicts") {
+    const conflict = record.conflicts[Number(index)];
+    if (!conflict) return null;
+    return {
+      title: conflict.name,
+      description: CONFLICT_QUESTION[conflict.kind],
+      sides: conflict.variants.map(({ value, sources }) => ({
+        label:
+          conflict.kind === "allergy_missing"
+            ? (ALLERGY_SIDE_LABEL[value] ?? value)
+            : value,
+        sources,
+      })),
+    };
+  }
+  if (!SECTIONS.includes(section as RecordSection)) return null;
+  const item = record[section as RecordSection][Number(index)];
   if (!item) return null;
   const title =
     "substance" in item
@@ -45,7 +71,11 @@ function findItem(record: HealthRecord, param: string | null): OpenItem | null {
       : "test" in item
         ? item.test
         : item.name;
-  return { title, sources: item.sources };
+  return {
+    title,
+    description: null,
+    sides: [{ label: null, sources: item.sources }],
+  };
 }
 
 type SourcePage = { number: number; lineIds: string[] };
@@ -80,19 +110,26 @@ export default function SourcePanel({
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();
-  const item = findItem(record, searchParams.get(ITEM_PARAM));
+  const param = searchParams.get(ITEM_PARAM);
+  const open = findItem(record, param) !== null;
 
   // Keep showing the last item while the panel animates closed.
-  const [shown, setShown] = useState(item);
-  if (item && item.sources !== shown?.sources) {
-    setShown(item);
+  const [shownParam, setShownParam] = useState(param);
+  if (open && param !== shownParam) {
+    setShownParam(param);
   }
-
-  const groups = shown ? groupSources(shown.sources) : [];
+  const shown = findItem(record, shownParam);
+  const sides = (shown?.sides ?? []).map((side) => ({
+    label: side.label,
+    groups: groupSources(side.sources),
+  }));
+  const documentCount = new Set(
+    sides.flatMap((side) => side.groups.map((group) => group.documentId)),
+  ).size;
 
   return (
     <Sheet
-      open={item !== null}
+      open={open}
       onOpenChange={(open) => {
         if (!open) router.replace(pathname, { scroll: false });
       }}
@@ -101,18 +138,28 @@ export default function SourcePanel({
         <SheetHeader className="border-b pr-12">
           <SheetTitle>{shown?.title}</SheetTitle>
           <SheetDescription>
-            {groups.length === 1
-              ? "Found in 1 document"
-              : `Found in ${groups.length} documents`}
+            {shown?.description ??
+              (documentCount === 1
+                ? "Found in 1 document"
+                : `Found in ${documentCount} documents`)}
           </SheetDescription>
         </SheetHeader>
-        <div className="flex-1 divide-y overflow-y-auto px-4">
-          {groups.map((group) => (
-            <SourceBlock
-              key={group.documentId}
-              group={group}
-              document={documents.get(group.documentId)}
-            />
+        <div className="flex-1 overflow-y-auto px-4">
+          {sides.map((side, i) => (
+            <div key={i} className="border-b last:border-b-0">
+              {side.label && (
+                <h3 className="pt-4 font-semibold">{side.label}</h3>
+              )}
+              <div className={cn("divide-y", side.label && "*:first:pt-2")}>
+                {side.groups.map((group) => (
+                  <SourceBlock
+                    key={group.documentId}
+                    group={group}
+                    document={documents.get(group.documentId)}
+                  />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </SheetContent>
@@ -136,9 +183,7 @@ function SourceBlock({
   return (
     <section className="space-y-3 py-4">
       <div>
-        <h3 className="font-medium">
-          {document?.provider ?? document?.filename ?? "Unknown document"}
-        </h3>
+        <p className="font-medium">{documentName(document)}</p>
         <p className="text-muted-foreground">{meta.join(" · ")}</p>
       </div>
       {group.pages.map((page) => (

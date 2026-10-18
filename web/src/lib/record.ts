@@ -87,6 +87,25 @@ export const DOCUMENT_TYPE_LABEL: Record<DocumentType, string> = {
   other: "Document",
 };
 
+export function documentName(doc: RecordDocument | undefined) {
+  return doc?.provider ?? doc?.filename ?? "Unknown document";
+}
+
+// "A", "A and B", "A, B and C"
+export function joinNames(names: string[]) {
+  return names.length < 2
+    ? (names[0] ?? "")
+    : `${names.slice(0, -1).join(", ")} and ${names.at(-1)}`;
+}
+
+// What to ask the doctor about each kind of disagreement. Asks, never answers.
+export const CONFLICT_QUESTION: Record<Conflict["kind"], string> = {
+  dose: "Ask which dose is current.",
+  frequency: "Ask how often you should take it.",
+  lab_value: "Ask which result to go by.",
+  allergy_missing: "Ask that it's on file everywhere.",
+};
+
 export type TimelineEvent = {
   key: string;
   date: string;

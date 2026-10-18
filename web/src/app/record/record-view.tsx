@@ -7,6 +7,7 @@ import { ApiError, getRecord } from "@/lib/api";
 import { buildTimeline, HealthRecord } from "@/lib/record";
 import Link from "next/link";
 import { Suspense, useEffect, useMemo, useState } from "react";
+import { Conflicts } from "./conflicts";
 import { Allergies, Conditions, Labs, Medications, Timeline } from "./sections";
 import SourcePanel from "./source-panel";
 
@@ -80,6 +81,7 @@ function Record({ record }: { record: HealthRecord }) {
 
   return (
     <div className="space-y-4">
+      <Conflicts conflicts={record.conflicts} documents={documents} />
       <p className="text-sm text-muted-foreground">
         Built from {count} {count === 1 ? "document" : "documents"}. The icon
         next to each item shows how many documents mention it. Select an item to
