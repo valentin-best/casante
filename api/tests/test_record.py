@@ -44,7 +44,7 @@ def test_items_cite_their_document_instead_of_bare_evidence():
     ]
 
 
-def test_items_get_a_matching_key_across_documents():
+def test_items_with_a_matching_key_merge_across_documents():
     record = build_record(
         [
             row("doc-a", allergies=[{"substance": "PCN", "evidence": ["p1-L2"]}]),
@@ -54,13 +54,12 @@ def test_items_get_a_matching_key_across_documents():
         ]
     )
 
-    assert [a["normalized"]["key"] for a in record["allergies"]] == [
-        "penicillin",
-        "penicillin",
-    ]
+    [allergy] = record["allergies"]
+    assert allergy["normalized"]["key"] == "penicillin"
+    assert [s["document_id"] for s in allergy["sources"]] == ["doc-a", "doc-b"]
 
 
-def test_items_from_every_document_are_listed():
+def test_every_document_is_listed():
     record = build_record(
         [
             row(
@@ -72,10 +71,6 @@ def test_items_from_every_document_are_listed():
         ]
     )
 
-    assert [a["sources"][0]["document_id"] for a in record["allergies"]] == [
-        "doc-a",
-        "doc-b",
-    ]
     assert [d["id"] for d in record["documents"]] == ["doc-a", "doc-b"]
     assert record["documents"][0]["provider"] == "Clinic A"
     assert record["conflicts"] == []
