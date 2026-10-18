@@ -17,6 +17,8 @@ import {
   TimelineEvent,
 } from "@/lib/record";
 import { FileText } from "lucide-react";
+import Link from "next/link";
+import { itemHref } from "./source-panel";
 
 type Documents = Map<string, RecordDocument>;
 
@@ -52,24 +54,33 @@ function Section({
   );
 }
 
+// Each item links to the source panel showing where it came from.
 function Item({
+  href,
   title,
   detail,
   aside,
 }: {
+  href: string;
   title: React.ReactNode;
   detail?: React.ReactNode;
   aside?: React.ReactNode;
 }) {
   return (
-    <li className="flex items-start gap-3 py-2.5 first:pt-0 last:pb-0">
-      <div className="min-w-0 flex-1">
-        <p className="font-medium">{title}</p>
-        {detail && <p className="text-muted-foreground">{detail}</p>}
-      </div>
-      {aside && (
-        <div className="flex shrink-0 items-center gap-1.5">{aside}</div>
-      )}
+    <li className="py-1 first:pt-0 last:pb-0">
+      <Link
+        href={href}
+        scroll={false}
+        className="-mx-2 flex items-start gap-3 rounded-md px-2 py-1.5 outline-none hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring"
+      >
+        <div className="min-w-0 flex-1">
+          <p className="font-medium">{title}</p>
+          {detail && <p className="text-muted-foreground">{detail}</p>}
+        </div>
+        {aside && (
+          <div className="flex shrink-0 items-center gap-1.5">{aside}</div>
+        )}
+      </Link>
     </li>
   );
 }
@@ -104,6 +115,11 @@ function joinDefined(...parts: (string | null | undefined)[]) {
   return parts.filter(Boolean).join(" · ") || null;
 }
 
+// Pairs each item with its position in the API array, which links refer to.
+function withIndex<T>(items: T[]): [T, number][] {
+  return items.map((item, index) => [item, index]);
+}
+
 const MEDICATION_ORDER = { active: 0, changed: 1, unknown: 2, stopped: 3 };
 
 export function Medications({
@@ -113,8 +129,8 @@ export function Medications({
   items: Medication[];
   documents: Documents;
 }) {
-  const sorted = [...items].sort(
-    (a, b) =>
+  const sorted = withIndex(items).sort(
+    ([a], [b]) =>
       MEDICATION_ORDER[a.status ?? "unknown"] -
       MEDICATION_ORDER[b.status ?? "unknown"],
   );
@@ -125,9 +141,10 @@ export function Medications({
       count={items.length}
       empty="No medications found in your documents."
     >
-      {sorted.map((med, i) => (
+      {sorted.map(([med, index]) => (
         <Item
-          key={i}
+          key={index}
+          href={itemHref("medications", index)}
           title={
             <span
               className={
@@ -177,9 +194,10 @@ export function Allergies({
       count={items.length}
       empty="No allergies found in your documents."
     >
-      {items.map((allergy, i) => (
+      {items.map((allergy, index) => (
         <Item
-          key={i}
+          key={index}
+          href={itemHref("allergies", index)}
           title={allergy.substance}
           detail={allergy.reaction}
           aside={
@@ -215,9 +233,10 @@ export function Conditions({
       count={items.length}
       empty="No conditions found in your documents."
     >
-      {items.map((condition, i) => (
+      {items.map((condition, index) => (
         <Item
-          key={i}
+          key={index}
+          href={itemHref("conditions", index)}
           title={condition.name}
           detail={
             condition.onset_date && `Since ${formatDate(condition.onset_date)}`
@@ -243,7 +262,7 @@ export function Labs({
   items: Lab[];
   documents: Documents;
 }) {
-  const sorted = [...items].sort((a, b) =>
+  const sorted = withIndex(items).sort(([a], [b]) =>
     (b.date ?? "").localeCompare(a.date ?? ""),
   );
 
@@ -253,9 +272,10 @@ export function Labs({
       count={items.length}
       empty="No lab results found in your documents."
     >
-      {sorted.map((lab, i) => (
+      {sorted.map(([lab, index]) => (
         <Item
-          key={i}
+          key={index}
+          href={itemHref("labs", index)}
           title={lab.test}
           detail={joinDefined(
             lab.reference_range && `Range ${lab.reference_range}`,
