@@ -33,7 +33,30 @@ def test_items_cite_their_document_instead_of_bare_evidence():
             "name": "Metformin",
             "dose": "500 mg",
             "sources": [{"document_id": "doc-a", "evidence": ["p1-L3"]}],
+            "normalized": {
+                "key": "metformin",
+                "rxcui": None,
+                "dose_value": 500,
+                "dose_unit": "mg",
+                "times_per_day": None,
+            },
         }
+    ]
+
+
+def test_items_get_a_matching_key_across_documents():
+    record = build_record(
+        [
+            row("doc-a", allergies=[{"substance": "PCN", "evidence": ["p1-L2"]}]),
+            row(
+                "doc-b", allergies=[{"substance": "Penicillin", "evidence": ["p2-L9"]}]
+            ),
+        ]
+    )
+
+    assert [a["normalized"]["key"] for a in record["allergies"]] == [
+        "penicillin",
+        "penicillin",
     ]
 
 

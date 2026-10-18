@@ -10,6 +10,7 @@ from typing import Any
 from app.db import BUCKET, rows, supabase
 from app.pipeline.extract import extract_document
 from app.pipeline.ingest import ingest_pdf
+from app.pipeline.normalize import lookup_drugs
 
 log = logging.getLogger(__name__)
 
@@ -80,6 +81,8 @@ def process_document(document_id: str) -> None:
         )
 
         extraction = extract_document(ingested)
+        # Warm the RxNav cache now so GET /record doesn't wait on it
+        lookup_drugs(med.name for med in extraction.medications)
         _update(
             document_id, status="done", extraction=extraction.model_dump(mode="json")
         )
