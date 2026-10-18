@@ -8,10 +8,10 @@ h2 { border: none; text-transform: none; letter-spacing: 0; font-size: 11.5pt; m
 <div class="side">{{ facility.address }}<br>Tel {{ facility.phone }}<br>{{ date }}</div>
 <h1>{{ facility.name }}</h1>
 <div style="clear:both"></div>
-<div class="row" style="margin-top:8mm">To: Primary care physician</div>
+<div class="row" style="margin-top:8mm">To: {{ recipient or "Primary care physician" }}</div>
 <div class="row">Re: {{ patient.name }}, born {{ patient.dob }} ({{ patient.sex }}), MRN {{ patient.mrn }}</div>
-<div class="row" style="margin-top:5mm">Dear colleague,</div>
-<div class="row">Thank you for referring {{ patient.name }}, whom I reviewed in clinic on {{ date }}. My findings and plan are summarised below.</div>
+<div class="row" style="margin-top:5mm">{{ greeting or "Dear colleague," }}</div>
+<div class="row">{% if intro %}{{ intro }}{% else %}Thank you for referring {{ patient.name }}, whom I reviewed in clinic on {{ date }}. My findings and plan are summarised below.{% endif %}</div>
 <h2>Current problems</h2>
 {% for c in conditions %}<div class="row">- {{ c.name }}, since {{ c.onset }}</div>
 {% else %}<div class="row">- No active problems recorded</div>{% endfor %}
@@ -22,7 +22,7 @@ h2 { border: none; text-transform: none; letter-spacing: 0; font-size: 11.5pt; m
 {% for a in allergies %}<div class="row">- {{ a.substance }}{% if a.reaction %} ({{ a.reaction }}){% endif %}</div>
 {% else %}<div class="row">- {{ no_allergy_text }}</div>{% endfor %}
 <h2>Plan</h2>
-<div class="row">Continue the current treatment and review in clinic in three months. Please contact me if you have any questions.</div>
+<div class="row">{{ plan or "Continue the current treatment and review in clinic in three months. Please contact me if you have any questions." }}</div>
 <div class="row" style="margin-top:8mm">Kind regards,</div>
 <div class="row">{{ provider }}</div>
 </body></html>

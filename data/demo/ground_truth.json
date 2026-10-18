@@ -1,0 +1,296 @@
+{
+  "patient": {
+    "name": "Elena Duarte",
+    "dob": "1958-06-02",
+    "sex": "Female"
+  },
+  "documents": {
+    "01_city_hospital_discharge_2025-03": {
+      "file": "account/01_city_hospital_discharge_2025-03.pdf",
+      "date": "2025-03-14",
+      "facility": "Springfield City Hospital",
+      "provider": "Dr. M. Okafor",
+      "medications": [
+        {
+          "name": "Metformin",
+          "dose": "500 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "20 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Doxycycline",
+          "dose": "100 mg",
+          "frequency": "twice daily"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Penicillin",
+          "reaction": "Hives and throat swelling"
+        }
+      ],
+      "labs": []
+    },
+    "02_family_clinic_letter_2026-01": {
+      "file": "account/02_family_clinic_letter_2026-01.jpg",
+      "date": "2026-01-20",
+      "facility": "Maple Grove Family Clinic",
+      "provider": "Dr. R. Fernandez",
+      "medications": [
+        {
+          "name": "Metformin",
+          "dose": "1000 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "20 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [],
+      "labs": []
+    },
+    "03_lab_report_2026-02": {
+      "file": "account/03_lab_report_2026-02.pdf",
+      "date": "2026-02-09",
+      "facility": "Springfield City Hospital Laboratory",
+      "provider": "Dr. R. Fernandez",
+      "medications": [],
+      "allergies": [],
+      "labs": [
+        {
+          "name": "Hemoglobin A1c",
+          "value": 7.6,
+          "unit": "%",
+          "date": "2026-02-09"
+        },
+        {
+          "name": "Glucose, fasting",
+          "value": 148,
+          "unit": "mg/dL",
+          "date": "2026-02-09"
+        },
+        {
+          "name": "Creatinine",
+          "value": 0.92,
+          "unit": "mg/dL",
+          "date": "2026-02-09"
+        },
+        {
+          "name": "eGFR",
+          "value": 71,
+          "unit": "mL/min/1.73m2",
+          "date": "2026-02-09"
+        },
+        {
+          "name": "Potassium",
+          "value": 4.6,
+          "unit": "mmol/L",
+          "date": "2026-02-09"
+        },
+        {
+          "name": "LDL cholesterol",
+          "value": 94,
+          "unit": "mg/dL",
+          "date": "2026-02-09"
+        }
+      ]
+    },
+    "04_cardiology_letter_2026-05": {
+      "file": "account/04_cardiology_letter_2026-05.pdf",
+      "date": "2026-05-12",
+      "facility": "Heartwell Cardiology Associates",
+      "provider": "Dr. S. Johansson",
+      "medications": [
+        {
+          "name": "Apixaban",
+          "dose": "5 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Metoprolol succinate ER",
+          "dose": "25 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Metformin",
+          "dose": "1000 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "10 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "20 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [],
+      "labs": []
+    },
+    "05_pharmacy_medication_list_2026-08": {
+      "file": "account/05_pharmacy_medication_list_2026-08.jpg",
+      "date": "2026-08-21",
+      "facility": "Elm Street Pharmacy",
+      "provider": "M. Chen, PharmD",
+      "medications": [
+        {
+          "name": "Metformin 1000 mg tablet",
+          "dose": "1000 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Lisinopril 10 mg tablet",
+          "dose": "10 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Atorvastatin 20 mg tablet",
+          "dose": "20 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Apixaban 5 mg tablet",
+          "dose": "5 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Metoprolol succinate ER 25 mg tablet",
+          "dose": "25 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [],
+      "labs": []
+    },
+    "06_lab_report_2026-09": {
+      "file": "live/06_lab_report_2026-09.pdf",
+      "date": "2026-09-15",
+      "facility": "Springfield City Hospital Laboratory",
+      "provider": "Dr. R. Fernandez",
+      "medications": [],
+      "allergies": [],
+      "labs": [
+        {
+          "name": "Hemoglobin A1c",
+          "value": 6.9,
+          "unit": "%",
+          "date": "2026-09-15"
+        },
+        {
+          "name": "Glucose, fasting",
+          "value": 126,
+          "unit": "mg/dL",
+          "date": "2026-09-15"
+        },
+        {
+          "name": "Creatinine",
+          "value": 0.95,
+          "unit": "mg/dL",
+          "date": "2026-09-15"
+        },
+        {
+          "name": "eGFR",
+          "value": 69,
+          "unit": "mL/min/1.73m2",
+          "date": "2026-09-15"
+        },
+        {
+          "name": "Potassium",
+          "value": 4.4,
+          "unit": "mmol/L",
+          "date": "2026-09-15"
+        }
+      ]
+    },
+    "07_urgent_care_letter_2026-10": {
+      "file": "live/07_urgent_care_letter_2026-10.jpg",
+      "date": "2026-10-03",
+      "facility": "Riverside Urgent Care",
+      "provider": "Dr. K. Tanaka",
+      "medications": [
+        {
+          "name": "Metformin",
+          "dose": "1000 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Lisinopril",
+          "dose": "20 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Atorvastatin",
+          "dose": "20 mg",
+          "frequency": "once daily"
+        },
+        {
+          "name": "Apixaban",
+          "dose": "5 mg",
+          "frequency": "twice daily"
+        },
+        {
+          "name": "Metoprolol succinate ER",
+          "dose": "25 mg",
+          "frequency": "once daily"
+        }
+      ],
+      "allergies": [
+        {
+          "substance": "Penicillin",
+          "reaction": "Hives and throat swelling"
+        }
+      ],
+      "labs": []
+    }
+  },
+  "expected_conflicts": [
+    {
+      "kind": "dose",
+      "name": "Metformin",
+      "values": [
+        "500 mg",
+        "1000 mg"
+      ]
+    },
+    {
+      "kind": "allergy_missing",
+      "name": "Penicillin",
+      "listed_in": [
+        "01_city_hospital_discharge_2025-03"
+      ],
+      "not_listed_in": [
+        "02_family_clinic_letter_2026-01",
+        "04_cardiology_letter_2026-05"
+      ]
+    }
+  ],
+  "expected_after_live_upload": [
+    {
+      "kind": "dose",
+      "name": "Lisinopril",
+      "values": [
+        "10 mg",
+        "20 mg"
+      ]
+    }
+  ]
+}
