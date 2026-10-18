@@ -45,3 +45,7 @@ supabase.local.env
 # Supabase CLI
 supabase/.temp/
 supabase/.branches/
+
+# Agent tooling
+.impeccable/
+.superpowers/
