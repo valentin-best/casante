@@ -59,6 +59,16 @@ export type Procedure = Sourced & {
   date: string | null;
 };
 
+// Documents that disagree (api/app/pipeline/reconcile.py). Each variant is one
+// side with the documents that say it; the app never picks which side is right.
+export type Conflict = {
+  kind: "dose" | "frequency" | "lab_value" | "allergy_missing";
+  section: "medications" | "labs" | "allergies";
+  key: string;
+  name: string;
+  variants: { value: string; sources: Source[] }[];
+};
+
 export type HealthRecord = {
   documents: RecordDocument[];
   medications: Medication[];
@@ -66,7 +76,7 @@ export type HealthRecord = {
   conditions: Condition[];
   labs: Lab[];
   procedures: Procedure[];
-  conflicts: unknown[];
+  conflicts: Conflict[];
 };
 
 export const DOCUMENT_TYPE_LABEL: Record<DocumentType, string> = {

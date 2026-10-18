@@ -7,6 +7,7 @@ from fastapi import APIRouter
 from app.auth import CurrentUser
 from app.db import Row, rows, supabase
 from app.pipeline.normalize import normalize_record
+from app.pipeline.reconcile import reconcile_record
 
 router = APIRouter(tags=["record"])
 
@@ -14,10 +15,8 @@ SECTIONS = ("medications", "allergies", "conditions", "labs", "procedures")
 
 
 def build_record(documents: list[Row]) -> dict[str, Any]:
-    """Flatten per-document extractions into one record, each item with its `normalized` key.
-
-    TODO(#12): merge items with the same key and flag conflicts.
-    """
+    """Combine per-document extractions into one record: items normalized, merged
+    across documents, and disagreements listed in `conflicts`."""
     record: dict[str, Any] = {
         "documents": [],
         **{section: [] for section in SECTIONS},
@@ -43,6 +42,7 @@ def build_record(documents: list[Row]) -> dict[str, Any]:
                 source = {"document_id": row["id"], "evidence": item["evidence"]}
                 record[section].append({**fields, "sources": [source]})
     normalize_record(record)
+    reconcile_record(record)
     return record
 
 
