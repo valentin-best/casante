@@ -13,6 +13,9 @@ ENV UV_COMPILE_BYTECODE=1 \
 COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev --no-install-project
 
+# RapidOCR downloads its models on first use; fetch them now, not at startup
+RUN python -c "from rapidocr import RapidOCR; RapidOCR()"
+
 COPY app ./app
 
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]

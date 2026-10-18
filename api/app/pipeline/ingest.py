@@ -1,7 +1,7 @@
 """api/app/pipeline/ingest.py
 
 Step 1 of the OneChart pipeline: digital PDF -> numbered lines with boxes + page PNGs.
-(Photo / no-text-layer pages are flagged with needs_ocr and handled by the docTR path later.)
+(Pages with no text layer are flagged with needs_ocr and read by ocr.py.)
 
 Bounding boxes are returned in IMAGE PIXELS at RENDER_DPI, so the source viewer can draw
 highlights directly on the page PNG without any extra scaling.
