@@ -6,6 +6,7 @@ from fastapi import APIRouter
 
 from app.auth import CurrentUser
 from app.db import Row, rows, supabase
+from app.pipeline.normalize import normalize_record
 
 router = APIRouter(tags=["record"])
 
@@ -13,9 +14,9 @@ SECTIONS = ("medications", "allergies", "conditions", "labs", "procedures")
 
 
 def build_record(documents: list[Row]) -> dict[str, Any]:
-    """Flatten per-document extractions into one record.
+    """Flatten per-document extractions into one record, each item with its `normalized` key.
 
-    TODO(#11, #12): normalize names, merge duplicates, etc.
+    TODO(#12): merge items with the same key and flag conflicts.
     """
     record: dict[str, Any] = {
         "documents": [],
@@ -41,6 +42,7 @@ def build_record(documents: list[Row]) -> dict[str, Any]:
                 }
                 source = {"document_id": row["id"], "evidence": item["evidence"]}
                 record[section].append({**fields, "sources": [source]})
+    normalize_record(record)
     return record
 
 
