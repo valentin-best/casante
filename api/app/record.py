@@ -3,9 +3,11 @@
 from typing import Any
 
 from fastapi import APIRouter
+from fastapi.responses import JSONResponse
 
 from app.auth import CurrentUser
 from app.db import Row, rows, supabase
+from app.pipeline.fhir import record_to_fhir
 from app.pipeline.normalize import normalize_record
 from app.pipeline.reconcile import reconcile_record
 
@@ -58,3 +60,16 @@ def get_record(user: CurrentUser) -> dict[str, Any]:
         .execute()
     )
     return build_record(found)
+
+
+@router.get("/record/fhir", response_class=JSONResponse)
+def get_fhir_record(user: CurrentUser) -> JSONResponse:
+    record = get_record(user)
+    bundle = record_to_fhir(record, user.id)
+    return JSONResponse(
+        content=bundle,
+        media_type="application/fhir+json",
+        headers={
+            "Content-Disposition": 'attachment; filename="unified-record.fhir.json"'
+        },
+    )

@@ -12,6 +12,8 @@ uv run uvicorn app.main:app --reload --env-file .env
 
 - `GET /health`: liveness check, no auth
 - `GET /me`: returns the signed-in user, handy to test the web login
+- `GET /record`: returns the unified record as JSON
+- `GET /record/fhir`: downloads the unified record as a FHIR R4 `Bundle`
 
 ## Gemini extraction
 
