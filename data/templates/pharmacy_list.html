@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+{% include '_base.css' %}
+.head { text-align: center; border-bottom: 1.5px dashed #555; padding-bottom: 3mm; margin-bottom: 4mm; }
+h1 { font-size: 15pt; }
+.med { border-bottom: 0.6px solid #bbb; padding: 2mm 0; }
+.drug { font-weight: bold; }
+</style></head><body>
+<div class="head"><h1>{{ facility.name }}</h1>
+<div class="fac">{{ facility.address }} · Tel {{ facility.phone }}</div></div>
+<h1 style="color:#000;font-size:13pt">Patient Medication List</h1>
+<div class="row">Patient: {{ patient.name }}</div>
+<div class="row">Date of birth: {{ patient.dob }}</div>
+<div class="row">Printed: {{ date }}</div>
+<h2>Active prescriptions</h2>
+{% for m in medications %}<div class="med">
+<div class="row drug">{{ m.name }}</div>
+<div class="row">Directions: {{ m.directions }}</div>
+<div class="row muted">Prescriber: {{ m.prescriber }} · Last filled: {{ m.filled }}</div>
+</div>
+{% endfor %}
+<div class="row muted" style="margin-top:8mm">Pharmacist: {{ provider }} · Bring this list to every appointment.</div>
+</body></html>
