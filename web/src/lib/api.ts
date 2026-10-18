@@ -1,4 +1,5 @@
 import { DocumentStatus } from "./document";
+import { HealthRecord } from "./record";
 import { createClient } from "./supabase/client";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL!;
@@ -49,4 +50,8 @@ export function startProcessing(id: string) {
 
 export function getDocument(id: string) {
   return request<ApiDocument>(`/documents/${id}`);
+}
+
+export function getRecord() {
+  return request<HealthRecord>("/record");
 }
