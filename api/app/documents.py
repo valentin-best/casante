@@ -73,26 +73,33 @@ def upload_document(file: UploadFile, user: CurrentUser) -> DocumentOut:
             status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
             "Files can be at most 20 MB.",
         )
+    row = save_document(
+        user.id, file.filename or f"document.{extension}", content_type, data
+    )
+    return DocumentOut(**row)
+
+
+def save_document(user_id: str, filename: str, content_type: str, data: bytes) -> Row:
+    """Store the original file and add its queued row. content_type must be in EXTENSIONS."""
     document_id = str(uuid4())
-    storage_path = f"{user.id}/{document_id}/original.{extension}"
+    storage_path = f"{user_id}/{document_id}/original.{EXTENSIONS[content_type]}"
     supabase().storage.from_(BUCKET).upload(
         storage_path, data, {"content-type": content_type}
     )
-    row = rows(
+    return rows(
         supabase()
         .table("documents")
         .insert(
             {
                 "id": document_id,
-                "user_id": user.id,
-                "filename": file.filename or f"document.{extension}",
+                "user_id": user_id,
+                "filename": filename,
                 "content_type": content_type,
                 "storage_path": storage_path,
             }
         )
         .execute()
     )[0]
-    return DocumentOut(**row)
 
 
 @router.post("/{document_id}/process", status_code=status.HTTP_202_ACCEPTED)
