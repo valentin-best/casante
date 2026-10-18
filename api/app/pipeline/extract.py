@@ -15,7 +15,7 @@ from pydantic import ValidationError
 from app.pipeline.ingest import IngestResult, Line
 from app.pipeline.schemas import ExtractionResult
 
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = os.getenv("GEMINI_MODEL", "gemini-3.8-flash")
 DEFAULT_CACHE_DIR = ".cache/gemini"
 MAX_API_ATTEMPTS = 3
 INVALID_JSON_ATTEMPTS = 2
@@ -115,7 +115,9 @@ def extract_document(
             try:
                 return ExtractionResult.model_validate_json(cache_path.read_text())
             except (OSError, ValidationError, json.JSONDecodeError) as error:
-                raise ExtractionError(f"Invalid extraction cache: {cache_path}") from error
+                raise ExtractionError(
+                    f"Invalid extraction cache: {cache_path}"
+                ) from error
 
     if client is None:
         from google import genai

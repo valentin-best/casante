@@ -4,7 +4,7 @@ import { UploadItem } from "@/lib/document";
 import { useEffect, useRef, useState } from "react";
 import Dropzone from "./dropzone";
 import FileList from "./file-list";
-import { simulateProcessing } from "@/lib/mock-processing";
+import { processDocument } from "@/lib/processing";
 
 export default function Uploader() {
   const [items, setItems] = useState<UploadItem[]>([]);
@@ -24,9 +24,11 @@ export default function Uploader() {
     setItems((prevItems) => [...prevItems, ...newItems]);
     for (const item of newItems) {
       cancels.current.push(
-        simulateProcessing((status) => {
+        processDocument(item.file, (status, error) => {
           setItems((prev) =>
-            prev.map((it) => (it.id === item.id ? { ...it, status } : it)),
+            prev.map((it) =>
+              it.id === item.id ? { ...it, status, error } : it,
+            ),
           );
         }),
       );
