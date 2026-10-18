@@ -57,3 +57,6 @@ def current_user(
         raise _unauthorized("Invalid or expired token")
 
     return User(id=claims["sub"], email=claims.get("email"))
+
+
+CurrentUser = Annotated[User, Depends(current_user)]

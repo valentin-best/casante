@@ -1,12 +1,21 @@
 import os
-from typing import Annotated
+from contextlib import asynccontextmanager
 
-from fastapi import Depends, FastAPI
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.auth import User, current_user
+from app import documents, record
+from app.auth import CurrentUser, User
+from app.pipeline.run import fail_interrupted
 
-app = FastAPI(title="CaSanté API")
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    fail_interrupted()
+    yield
+
+
+app = FastAPI(title="CaSanté API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -15,6 +24,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(documents.router)
+app.include_router(record.router)
+
 
 @app.get("/health")
 def health() -> dict[str, str]:
@@ -22,5 +34,5 @@ def health() -> dict[str, str]:
 
 
 @app.get("/me")
-def me(user: Annotated[User, Depends(current_user)]) -> User:
+def me(user: CurrentUser) -> User:
     return user
