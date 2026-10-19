@@ -48,7 +48,7 @@ def sha256_hex(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def _page_lines(page: "fitz.Page", page_no: int) -> list[Line]:
+def _page_lines(page: fitz.Page, page_no: int) -> list[Line]:
     """Read the text layer line by line, numbering lines sequentially per page."""
     lines: list[Line] = []
     n = 0
