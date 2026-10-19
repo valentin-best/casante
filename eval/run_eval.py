@@ -1,6 +1,6 @@
 """run_eval.py: score the extraction pipeline against Synthea ground truth.
 
-    python eval/run_eval.py                # real pipeline (needs GEMINI_API_KEY)
+    cd api && uv run --env-file .env --with matplotlib python ../eval/run_eval.py   # real pipeline
     python eval/run_eval.py --mock         # fake pipeline, to test scoring + chart
     python eval/run_eval.py --limit 6      # smoke test on the first 6 documents
     python eval/run_eval.py --conditions clean
@@ -86,11 +86,8 @@ def parse_dose(s):
 
 def eq_med(g, p):
     gc, pc = code_of(g, "rxcui"), code_of(p, "rxcui")
-    same_drug = (
-        gc == pc
-        if (gc and pc)
-        else norm_text(g.get("name")) == norm_text(p.get("name"))
-    )
+    # RxNav may resolve a printed name to a different RxCUI than Synthea's, so a name match counts too
+    same_drug = bool(gc and gc == pc) or norm_text(g.get("name")) == norm_text(p.get("name"))
     return same_drug and parse_dose(g.get("dose")) == parse_dose(p.get("dose"))
 
 
@@ -156,37 +153,83 @@ def prf(tp, fp, fn):
 # Pipelines
 # ----------------------------------------------------------------------------
 class RealPipeline:
-    """Calls the real pipeline modules in api/app/pipeline/.
+    """Runs the API's own pipeline: ingest (+ OCR), Gemini extraction, normalize, reconcile.
 
-    ADAPT the lines marked ADAPT to the actual function names and signatures.
-    Items must be plain dicts shaped like the extraction schema after normalization
-    (medications: name, dose, code; allergies: substance; conditions: name;
-    labs: test, value, code).
+    Run it with the API's environment, from api/ so the Gemini and RxNav caches are shared:
+        cd api && uv run --env-file .env --with matplotlib python ../eval/run_eval.py
     """
 
     def __init__(self):
         sys.path.insert(0, str(REPO_ROOT / "api"))
-        from app.pipeline import extract, ingest, normalize, reconcile  # type: ignore
+        from app.pipeline import extract, ingest, ocr  # type: ignore
+        from app.record import build_record  # type: ignore
 
-        self.m = SimpleNamespace(
-            extract=extract, ingest=ingest, normalize=normalize, reconcile=reconcile
-        )
+        self.m = SimpleNamespace(extract=extract, ingest=ingest, ocr=ocr)
+        self.build_record = build_record
+
+    def _extract(self, path):
+        import tempfile
+
+        data = Path(path).read_bytes()
+        with tempfile.TemporaryDirectory() as tmp:
+            if Path(path).suffix.lower() == ".pdf":
+                ingested = self.m.ocr.read_scanned_pages(self.m.ingest.ingest_pdf(data, tmp))
+            else:
+                ingested = self.m.ocr.ingest_photo(data, tmp)
+            return self.m.extract.extract_document(ingested).model_dump(mode="json")
 
     def process(self, doc_id, paths, condition):
-        merged = {f: [] for f in FIELDS}
-        for path in paths:  # a multi-page photo document = one image per page
-            lines = self.m.ingest.ingest_file(path)  # ADAPT
-            items = self.m.extract.extract_items(lines)  # ADAPT
-            items = self.m.normalize.normalize_items(items)  # ADAPT
-            for f in FIELDS:
-                merged[f] += items.get(f) or []
-        return merged
+        """One extraction per file. A multi-page photo document merges its pages."""
+        pages = [self._extract(path) for path in paths]
+        extraction = {"document": pages[0]["document"]}
+        for f in (*FIELDS, "procedures"):
+            extraction[f] = [item for page in pages for item in page.get(f, [])]
+        # Normalize the same way GET /record does, one document at a time
+        record = self.build_record(
+            [{"id": doc_id, "filename": doc_id, "extraction": extraction}]
+        )
+        return {
+            "extraction": extraction,
+            "medications": [
+                {"name": m["name"], "dose": m.get("dose"), "rxcui": m["normalized"]["rxcui"]}
+                for m in record["medications"]
+            ],
+            "allergies": [{"substance": a["substance"]} for a in record["allergies"]],
+            "conditions": [{"name": c["name"]} for c in record["conditions"]],
+            "labs": [
+                {"test": lab["test"], "value": lab.get("value"), "loinc": lab["normalized"]["loinc"]}
+                for lab in record["labs"]
+            ],
+        }
 
     def reconcile(self, items_by_doc):
-        result = self.m.reconcile.reconcile(items_by_doc)  # ADAPT
-        return [
-            {"type": c["type"], "key": c["key"]} for c in result["conflicts"]
-        ]  # ADAPT
+        """Conflicts from the real record, keyed every way a planted conflict may name them."""
+        record = self.build_record(
+            [
+                {"id": doc_id, "filename": doc_id, "extraction": items["extraction"]}
+                for doc_id, items in items_by_doc.items()
+                if "extraction" in items  # failed documents have none
+            ]
+        )
+        by_source = defaultdict(list)  # (section, document id) -> items
+        for section in ("medications", "allergies"):
+            for item in record[section]:
+                for source in item["sources"]:
+                    by_source[section, source["document_id"]].append(item)
+        out = []
+        for c in record["conflicts"]:
+            kind = {"dose": "dose", "allergy_missing": "allergy"}.get(c["kind"])
+            if kind is None:
+                continue
+            keys = {c["key"], c["name"]}
+            for variant in c["variants"]:
+                for source in variant["sources"]:
+                    for item in by_source[c["section"], source["document_id"]]:
+                        if item["normalized"]["key"] == c["key"]:
+                            keys.add(item["normalized"].get("rxcui") or "")
+                            keys.add(item.get("name") or item.get("substance") or "")
+            out += [{"type": kind, "key": k} for k in keys if k]
+        return out
 
 
 def simple_reconcile(items_by_doc):
@@ -480,7 +523,7 @@ def make_chart(metrics, path):
     ax.set_xticklabels(labels)
     ax.set_ylim(0, 1.12)
     ax.set_ylabel("F1 (conflicts: recall)")
-    ax.set_title("OneChart extraction quality vs Synthea ground truth")
+    ax.set_title("CaSanté extraction quality vs Synthea ground truth")
     ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=2, frameon=False)
     for side in ("top", "right"):
         ax.spines[side].set_visible(False)
