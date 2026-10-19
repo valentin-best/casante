@@ -1,0 +1,236 @@
+{
+  "config": {
+    "mock": false,
+    "variant": 0,
+    "limit": null,
+    "cached_only": true,
+    "batch_size": 5,
+    "seed": 42
+  },
+  "clean": {
+    "n_docs": 23,
+    "failed_docs": 0,
+    "avg_seconds_per_doc": 12.17,
+    "fields": {
+      "medications": {
+        "tp": 64,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "allergies": {
+        "tp": 38,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "conditions": {
+        "tp": 87,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "labs": {
+        "tp": 82,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "conflicts": {
+      "found": 4,
+      "total": 4,
+      "recall": 1.0,
+      "detail": [
+        {
+          "patient": "p01",
+          "type": "dose",
+          "key": "1649987",
+          "detected": true
+        },
+        {
+          "patient": "p01",
+          "type": "allergy",
+          "key": "Latex",
+          "detected": true
+        },
+        {
+          "patient": "p04",
+          "type": "dose",
+          "key": "309362",
+          "detected": true
+        },
+        {
+          "patient": "p04",
+          "type": "allergy",
+          "key": "Penicillin",
+          "detected": true
+        },
+        {
+          "patient": "p08",
+          "type": "dose",
+          "key": "861467",
+          "detected": null,
+          "note": "not all documents scored"
+        },
+        {
+          "patient": "p08",
+          "type": "allergy",
+          "key": "Sulfonamide antibiotics",
+          "detected": null,
+          "note": "not all documents scored"
+        },
+        {
+          "patient": "p09",
+          "type": "dose",
+          "key": "314076",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p09",
+          "type": "allergy",
+          "key": "Latex",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p17",
+          "type": "dose",
+          "key": "861007",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p17",
+          "type": "allergy",
+          "key": "Penicillin",
+          "detected": null,
+          "note": "no documents for this patient"
+        }
+      ]
+    }
+  },
+  "photo": {
+    "n_docs": 3,
+    "failed_docs": 0,
+    "avg_seconds_per_doc": 1.45,
+    "fields": {
+      "medications": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "allergies": {
+        "tp": 17,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "conditions": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "labs": {
+        "tp": 11,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9167,
+        "recall": 0.9167,
+        "f1": 0.9167
+      }
+    },
+    "conflicts": {
+      "found": 2,
+      "total": 2,
+      "recall": 1.0,
+      "detail": [
+        {
+          "patient": "p01",
+          "type": "dose",
+          "key": "1649987",
+          "detected": true
+        },
+        {
+          "patient": "p01",
+          "type": "allergy",
+          "key": "Latex",
+          "detected": true
+        },
+        {
+          "patient": "p04",
+          "type": "dose",
+          "key": "309362",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p04",
+          "type": "allergy",
+          "key": "Penicillin",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p08",
+          "type": "dose",
+          "key": "861467",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p08",
+          "type": "allergy",
+          "key": "Sulfonamide antibiotics",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p09",
+          "type": "dose",
+          "key": "314076",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p09",
+          "type": "allergy",
+          "key": "Latex",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p17",
+          "type": "dose",
+          "key": "861007",
+          "detected": null,
+          "note": "no documents for this patient"
+        },
+        {
+          "patient": "p17",
+          "type": "allergy",
+          "key": "Penicillin",
+          "detected": null,
+          "note": "no documents for this patient"
+        }
+      ]
+    }
+  }
+}

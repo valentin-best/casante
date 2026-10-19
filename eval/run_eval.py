@@ -4,6 +4,7 @@
     python eval/run_eval.py --mock         # fake pipeline, to test scoring + chart
     python eval/run_eval.py --limit 6      # smoke test on the first 6 documents
     python eval/run_eval.py --conditions clean
+    python eval/run_eval.py --cached-only  # re-score cached documents only, no model calls
 
 Install: pip install matplotlib
 
@@ -86,9 +87,21 @@ def parse_dose(s):
 
 def eq_med(g, p):
     gc, pc = code_of(g, "rxcui"), code_of(p, "rxcui")
-    # RxNav may resolve a printed name to a different RxCUI than Synthea's, so a name match counts too
-    same_drug = bool(gc and gc == pc) or norm_text(g.get("name")) == norm_text(p.get("name"))
-    return same_drug and parse_dose(g.get("dose")) == parse_dose(p.get("dose"))
+    gn, pn = norm_text(g.get("name")), norm_text(p.get("name"))
+    # RxNav may resolve a printed name to a different RxCUI than Synthea's, so a name
+    # match counts too. Synthea names carry strength and form ("Clopidogrel 75 MG Oral
+    # Tablet") where the extraction often splits them out, so a shorter name inside the
+    # longer one is the same drug.
+    same_drug = (
+        bool(gc and gc == pc)
+        or gn == pn
+        or bool(pn and pn in gn)
+        or bool(gn and gn in pn)
+    )
+    # Synthea often leaves dose empty and keeps it in the name
+    return same_drug and parse_dose(g.get("dose") or g.get("name")) == parse_dose(
+        p.get("dose") or p.get("name")
+    )
 
 
 def eq_allergy(g, p):
@@ -102,7 +115,8 @@ def eq_condition(g, p):
 def eq_lab(g, p):
     gc, pc = code_of(g, "loinc"), code_of(p, "loinc")
     gn, pn = g.get("test") or g.get("name"), p.get("test") or p.get("name")
-    same = gc == pc if (gc and pc) else norm_text(gn) == norm_text(pn)
+    # The API maps blood and serum variants to one LOINC on purpose, so a name match counts too
+    same = bool(gc and gc == pc) or norm_text(gn) == norm_text(pn)
     if not same:
         return False
     try:
@@ -173,7 +187,9 @@ class RealPipeline:
         data = Path(path).read_bytes()
         with tempfile.TemporaryDirectory() as tmp:
             if Path(path).suffix.lower() == ".pdf":
-                ingested = self.m.ocr.read_scanned_pages(self.m.ingest.ingest_pdf(data, tmp))
+                ingested = self.m.ocr.read_scanned_pages(
+                    self.m.ingest.ingest_pdf(data, tmp)
+                )
             else:
                 ingested = self.m.ocr.ingest_photo(data, tmp)
             return self.m.extract.extract_document(ingested).model_dump(mode="json")
@@ -191,13 +207,21 @@ class RealPipeline:
         return {
             "extraction": extraction,
             "medications": [
-                {"name": m["name"], "dose": m.get("dose"), "rxcui": m["normalized"]["rxcui"]}
+                {
+                    "name": m["name"],
+                    "dose": m.get("dose"),
+                    "rxcui": m["normalized"]["rxcui"],
+                }
                 for m in record["medications"]
             ],
             "allergies": [{"substance": a["substance"]} for a in record["allergies"]],
             "conditions": [{"name": c["name"]} for c in record["conditions"]],
             "labs": [
-                {"test": lab["test"], "value": lab.get("value"), "loinc": lab["normalized"]["loinc"]}
+                {
+                    "test": lab["test"],
+                    "value": lab.get("value"),
+                    "loinc": lab["normalized"]["loinc"],
+                }
                 for lab in record["labs"]
             ],
         }
@@ -429,6 +453,10 @@ def score_conflicts(pipe, planted, gt_docs, results):
                 {**c, "detected": None, "note": "no documents for this patient"}
             )
             continue
+        # A conflict spans documents, so it can't be found from part of them (--cached-only)
+        if any(g["patient"] == pat and d not in results for d, g in gt_docs.items()):
+            detail.append({**c, "detected": None, "note": "not all documents scored"})
+            continue
         if pat not in predicted:
             try:
                 predicted[pat] = {
@@ -575,6 +603,11 @@ def main():
         "--no-cache", action="store_true", help="ignore cached results and rerun"
     )
     ap.add_argument(
+        "--cached-only",
+        action="store_true",
+        help="score only documents already in the cache (no model calls)",
+    )
+    ap.add_argument(
         "--mock", action="store_true", help="fake pipeline to test scoring and chart"
     )
     ap.add_argument("--seed", type=int, default=42)
@@ -598,6 +631,7 @@ def main():
             "mock": args.mock,
             "variant": args.variant,
             "limit": args.limit,
+            "cached_only": args.cached_only,
             "batch_size": args.batch_size,
             "seed": args.seed,
         }
@@ -614,6 +648,12 @@ def main():
             print(
                 f"[{cond}] warning: {len(gt_docs) - len(docs)} ground-truth documents have no file"
             )
+        if args.cached_only:
+            docs = {
+                d: p
+                for d, p in docs.items()
+                if (cache_root / cond / f"{d}.json").exists()
+            }
         if not docs:
             print(f"[{cond}] nothing to evaluate, skipping")
             continue
